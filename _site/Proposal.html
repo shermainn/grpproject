@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Proposal – ISSS608 Project</title>
+<title>Project Proposal – ISSS608 Project</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -114,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Proposal</h1>
+<h1 class="title">Project Proposal</h1>
 </div>
 
 
@@ -131,42 +165,30 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="detective-who" class="level1">
-<h1>Detective Who</h1>
-<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbr9NG1ZkD3p0DDrGtYcf3zOORN1_nSEWcfg&amp;s.png" class="img-fluid"></p>
-<p>Our team is developing an interactive visual analytics platform to support investigative journalist Clepper Jessen in uncovering the hidden dynamics shaping recent events on the island of Oceanus. Once dominated by fishing, Oceanus has seen rising tensions with the growth of tourism following a crackdown on illegal activities. Now, amid high-profile attention and secretive developments, Clepper has intercepted two weeks of radio communications that may reveal corruption, concealed logistics, and resurfacing criminal networks.</p>
-<p>The motivation behind our platform is to help Clepper decode this vast and complex web of interactions using a knowledge graph built from communication data. Given the scale and sensitivity of the information, traditional analysis methods are insufficient. Visual analytics offers a powerful means to surface hidden patterns and relationships.</p>
-<p>Key objectives include identifying daily temporal communication patterns and shifts over time, mapping out influence networks of notable figures and organizations, revealing thematic groupings among vessels and individuals, and detecting the use of aliases or pseudonyms—such as “Boss” or “The Lookout.” The platform also investigates the suspected illicit activity of Nadia Conti, a former player in illegal fishing operations.</p>
-<p>Main features of the application include an interactive communication timeline, a dynamic knowledge graph explorer, pseudonym detection tools, group discovery based on communication themes, and a dedicated “Nadia Tracker.” These visual tools empower Clepper to trace influence, examine affiliations, and explore the evolving narrative on Oceanus, ultimately helping expose hidden truths and support investigative journalism.</p>
-</section>
-<section id="proposal" class="level1">
-<h1>Proposal</h1>
 <section id="proposal-visual-analytics-platform-for-investigative-journalism-in-oceanus" class="level2">
 <h2 class="anchored" data-anchor-id="proposal-visual-analytics-platform-for-investigative-journalism-in-oceanus"><strong>Proposal: Visual Analytics Platform for Investigative Journalism in Oceanus</strong></h2>
 <section id="challenge-mini-case-challenge-3-visualizing-communications-and-influence-in-oceanus" class="level3">
 <h3 class="anchored" data-anchor-id="challenge-mini-case-challenge-3-visualizing-communications-and-influence-in-oceanus"><strong>Challenge:</strong> Mini Case Challenge 3 — Visualizing Communications and Influence in Oceanus</h3>
+<p>We have chosen Mini Case Challenge 3 -Visualizing Communications and Influence in Oceanus and the <a href="https://vast-challenge.github.io/2025/MC3.html">link</a> to the challenge can be found here.</p>
 </section>
 </section>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction"><strong>1. Introduction</strong></h2>
+<section id="detective-who" class="level1">
+<h1>Detective Who</h1>
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbr9NG1ZkD3p0DDrGtYcf3zOORN1_nSEWcfg&amp;s.png" class="img-fluid"></p>
+</section>
+<section id="introduction" class="level1">
+<h1><strong>1. Introduction</strong></h1>
 <p>The island community of Oceanus is undergoing a period of rapid transformation. As illegal fishing operations are curtailed, new tensions arise in sectors like ocean tourism, especially surrounding high-profile events such as Sailor Shift’s music video shoot. Investigative journalist Clepper Jessen has gathered extensive radio communication data, which now requires advanced visual analysis to uncover hidden dynamics, influence patterns, and potentially illegal behavior.</p>
 </section>
-<section id="problem-statement" class="level2">
-<h2 class="anchored" data-anchor-id="problem-statement"><strong>2. Problem Statement</strong></h2>
-<p>Clepper’s recordings, covering two weeks of intercepted radio communications, reveal a network of individuals, vessels, and pseudonyms involved in complex interactions. Manual analysis of this data is insufficient. To support his investigation, a visual analytics tool is required to:</p>
-<ul>
-<li><p>Identify temporal and relational patterns in communication</p></li>
-<li><p>Highlight influence structures and key entities</p></li>
-<li><p>Detect the use of pseudonyms</p></li>
-<li><p>Uncover the potential re-involvement of known suspects in illicit activities</p></li>
-</ul>
+<section id="motivation" class="level1">
+<h1>2. Motivation</h1>
+<p>Our team is developing an interactive visual analytics platform to support investigative journalist Clepper Jessen in uncovering the hidden dynamics shaping recent events on the island of Oceanus, relating to high-level Oceanus officials, Sailor Shift’s team, local influential families and local conservationist group The Green Guardians. Clepper has intercepted two weeks of radio communications that may reveal corruption, concealed logistics, and resurfacing criminal networks.</p>
+<p>The motivation behind our platform is to help Clepper decode this vast and complex web of interactions using a knowledge graph built from communication data. Given the scale and sensitivity of the information, traditional analysis methods are insufficient. Visual analytics offers a powerful means to surface hidden patterns and relationships.</p>
 </section>
-<section id="data" class="level2">
-<h2 class="anchored" data-anchor-id="data"><strong>3. Data</strong></h2>
-<p>The project examines data from The Vast Challenge 2025 the <a href="https://vast-challenge.github.io/2025/MC3.html">Mini Challenge 3</a>. The dataset contains the 2 weeks of radio intercept by Clepper Jansen to uncover communications between people and organizations in Oceanus. The dataset is a graph network comprised of 1159 nodes and 3226 edges. Each node represents entity (people, organizations or groups), event or relationship, whereas edges represent relationship (i.e.&nbsp;sender and receiver).</p>
-</section>
-<section id="objectives" class="level2">
-<h2 class="anchored" data-anchor-id="objectives"><strong>4. Objectives</strong></h2>
+<section id="objectives" class="level1">
+<h1><strong>3. Objectives</strong></h1>
+<p>Key objectives include identifying daily temporal communication patterns and shifts over time, mapping out influence networks of notable figures and organizations, revealing thematic groupings among vessels and individuals, and detecting the use of aliases or pseudonyms—such as “Boss” or “The Lookout.” The platform also investigates the suspected illicit activity of Nadia Conti, a former player in illegal fishing operations.</p>
+<p>Main features of the application include an interactive communication timeline, a dynamic knowledge graph explorer, pseudonym detection tools, group discovery based on communication themes, and a dedicated “Nadia Tracker.” These visual tools empower Clepper to trace influence, examine affiliations, and explore the evolving narrative on Oceanus, ultimately helping expose hidden truths and support investigative journalism.</p>
 <p>Our goal is to build an interactive visual analytics application that enables:</p>
 <ul>
 <li><p>Exploration of <strong>daily communication patterns</strong> and their evolution</p></li>
@@ -176,18 +198,58 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Summary of <strong>individual activity timelines</strong>, particularly those with suspected misconduct</p></li>
 </ul>
 </section>
-<section id="key-features" class="level2">
-<h2 class="anchored" data-anchor-id="key-features"><strong>5. Key Features</strong></h2>
+<section id="data" class="level1">
+<h1><strong>4. Data</strong></h1>
+<p>The project examines data from The Vast Challenge 2025 the <a href="https://vast-challenge.github.io/2025/MC3.html">Mini Challenge 3</a>. The dataset contains the 2 weeks of radio intercept by Clepper Jansen to uncover communications between people and organizations in Oceanus. The dataset is a graph network comprised of 1159 nodes and 3226 edges. Each node represents entity (people, organizations or groups), event or relationship, whereas edges represent relationship (i.e.&nbsp;sender and receiver).</p>
+</section>
+<section id="methodology" class="level1">
+<h1><strong>5. Methodology</strong></h1>
+<p><strong>A. Data Preparation</strong></p>
 <ul>
-<li><p><strong>Temporal Graph View</strong>: Show message frequency, time-of-day patterns, and shifts over the two-week period.</p></li>
-<li><p><strong>Knowledge Graph Explorer</strong>: Visualize relationships and interactions among nodes (people, vessels, pseudonyms).</p></li>
+<li><p>Cleaning and Shaping data for relevant data for analysis</p></li>
+<li><p>Filtering out relevant nodes into their different entities and relationship: person, vessel, group, relationship, communication and monitoring</p></li>
+<li><p>Filtering out relevant Edges into their different events: communication, event, relationship</p></li>
+</ul>
+<p><strong>B. Data Exploration and Visualization</strong></p>
+<ul>
+<li><p><strong>Heatmaps</strong>: Show message frequency, time-of-day patterns, and shifts over the two-week period.</p></li>
+<li><p><strong>Timelines:</strong> To track specific people and their communication</p></li>
+<li><p><strong>Word Clouds:</strong> To track the most communicated words by person, organisations and vessels</p></li>
+<li><p><strong>Knowledge graph explorer:</strong> Visualize relationships and interactions among nodes (people, vessels, pseudonyms)</p></li>
 <li><p><strong>Pseudonym Linker</strong>: Identify and visualize shared aliases, repeated use, and communication threads.</p></li>
 <li><p><strong>Influence Mapping</strong>: Focused visual breakdown of who influences or communicates with key targets.</p></li>
 <li><p><strong>Suspect Spotlight</strong>: A dedicated visual dashboard summarizing Nadia Conti’s activity, affiliations, and suspicious connections.</p></li>
 </ul>
 </section>
-<section id="expected-outcomes" class="level2">
-<h2 class="anchored" data-anchor-id="expected-outcomes"><strong>6. Expected Outcomes</strong></h2>
+<section id="prototype-sketches" class="level1">
+<h1>6. Prototype Sketches</h1>
+<p><img src="images/clipboard-773903207.png" class="img-fluid"></p>
+<p>Our shiny app will focus on timelines and network visualisation graphs, with heatmaps and wordclouds assisting with the interpretation of data.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Inputs</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Outputs</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>The Shiny app with have 2 main inputs:</p>
+<p><strong>Date</strong></p>
+<p>As we are interested in patterns between the communication, we should be able to filter by date to get a microview on the communication between person, vessels, groups and organisations</p>
+<p><strong>Nodes (Entity/Event/Relationship)</strong></p>
+<p>This helps to narrow down to the nodes that we are interested in looking at, be it person and relationship or vessels and person, we will be able to select the ones we are interested in and zoom in on the parts.</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p><strong>Heatmaps</strong></p>
+<p>Shows the pattern of communication</p>
+<p><strong>Timeline</strong></p>
+<p>Show the communication between specific suspects</p>
+<p><strong>Wordcloud</strong></p>
+<p>Show most commonly used words</p>
+<p><strong>Network Graphs</strong></p>
+<p>Show the relationship and frequency of communication</p>
+</div>
+</div>
+</div>
+</section>
+<section id="expected-outcomes" class="level1">
+<h1><strong>7. Expected Outcomes</strong></h1>
 <ul>
 <li><p>A web-based or R Shiny-powered dashboard that Clepper can use for investigative reporting.</p></li>
 <li><p>Visual evidence of hidden groupings, influence networks, and potential misconduct.</p></li>
@@ -195,21 +257,53 @@ ul.task-list li input[type="checkbox"] {
 <li><p>A replicable framework for future investigative cases involving communication networks.</p></li>
 </ul>
 </section>
-<section id="tools-technologies" class="level2">
-<h2 class="anchored" data-anchor-id="tools-technologies"><strong>7. Tools &amp; Technologies</strong></h2>
+<section id="r-packages" class="level1">
+<h1><strong>8. R Packages</strong></h1>
 <ul>
-<li><p>R, tidygraph, ggraph, visNetwork, Shiny</p></li>
-<li><p>Text processing: <code>stringr</code>, <code>tidytext</code></p></li>
-<li><p>Data visualization: <code>plotly</code>, <code>DT</code>, <code>ggplot2</code></p></li>
+<li><p>R, tidygraph, ggraph, visNetwork, Shiny, dplyr, rcolorbrewer</p></li>
+<li><p>Text processing: <code>stringr</code>, <code>tidytext, tidyr</code></p></li>
+<li><p>Data visualization: <code>plotly</code>, <code>DT</code>, <code>ggplot2, wordcloud</code></p></li>
 <li><p>Knowledge graph analysis: <code>igraph</code>, <code>ggraph</code></p></li>
 </ul>
 </section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion"><strong>8. Conclusion</strong></h2>
-<p>Our proposed visual analytics platform offers a scalable, insightful, and interactive approach to investigating the complex network of communications in Oceanus. It empowers Clepper Jessen to explore narratives of power, secrecy, and influence through intuitive visual tools, ultimately supporting transparency and accountability.</p>
+<section id="project-schedule" class="level1">
+<h1><strong>9. Project Schedule</strong></h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(vistime, ggplot2)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">text=</span><span class="st">"event,group,start,end,color</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="st">                       ,Project Proposal,2025-06-01,2025-06-08,#a5d6a7</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="st">                       ,Exploratory data analysis,2025-06-01,2025-06-08,#a5d6a7</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="st">                       ,Exploratory data analysis,2025-06-08,2025-06-18,#DD4B39</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="st">                       ,R Quarto/ Netlify,2025-06-01,2025-06-08,#a5d6a7</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="st">                       ,R Quarto/ Netlify,2025-06-08,2025-07-06,#DD4B39</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="st">                       ,R Shiny App,2025-06-08,2025-07-06,#DD4B39</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="st">                       ,Poster,2025-06-18,2025-07-06,#DD4B39</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="st">                       ,User Guide,2025-06-22,2025-07-06,#DD4B39"</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>                 )</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>                </span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>proposal_deadline <span class="ot">&lt;-</span> <span class="fu">as.Date</span>(<span class="st">"2025-06-08"</span>) </span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">gg_vistime</span>(data, <span class="at">title =</span> <span class="st">"Project Timeline"</span>) </span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>p <span class="sc">+</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="fu">as.numeric</span>(<span class="fu">as.POSIXct</span>(<span class="st">"2025-06-08"</span>)), <span class="at">color =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+ℹ Please use `linewidth` instead.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 8 rows containing missing values or values outside the scale range
+(`geom_text()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Proposal_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
