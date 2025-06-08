@@ -11,10 +11,10 @@ editor: visual
 
 -   Our team is developing an interactive visual analytics platform to assist investigative journalist Clepper Jessen in uncovering the hidden dynamics of recent events in Oceanus. With the island undergoing a complex transformation—from a crackdown on illegal fishing to the rise of tourism—the need to understand the evolving power structures, communication patterns, and relationships has become urgent.
 
-    **Motivation:**\
-    Clepper has intercepted and transcribed two weeks of radio communications revealing possible corruption, secretive dealings, and the re-emergence of figures involved in past illegal activities. The sheer volume and complexity of these interactions call for a robust, intuitive visual tool that can decode the knowledge graph and support investigative storytelling.
+**Motivation:**\
+Clepper has intercepted and transcribed two weeks of radio communications revealing possible corruption, secretive dealings, and the re-emergence of figures involved in past illegal activities. The sheer volume and complexity of these interactions call for a robust, intuitive visual tool that can decode the knowledge graph and support investigative storytelling.
 
-    **Objectives:**
+**Objectives:**
 
 -   Identify temporal patterns in daily communication flows and how they shift over time.
 
@@ -26,7 +26,7 @@ editor: visual
 
 -   Investigate the role of Nadia Conti in ongoing activities, providing a visual case for or against Clepper’s suspicions.
 
-    **Main Features:**
+**Main Features:**
 
 -   **Interactive Communication Timeline:** Detects and compares daily messaging patterns, with filters for dates, people, and topics.
 
@@ -38,7 +38,7 @@ editor: visual
 
 -   **Topic Tagging & Group Discovery:** Uses content analysis to reveal discussion themes and groupings by interest or affiliation.
 
--   This application empowers Clepper to dig deeper, trace influence, expose hidden connections, and ultimately, bring transparency to the tangled web of Oceanus.
+This application empowers Clepper to dig deeper, trace influence, expose hidden connections, and ultimately, bring transparency to the tangled web of Oceanus.
 
 # Proposal
 
