@@ -28,38 +28,45 @@
     "text": "2. Problem Statement\nClepper’s recordings, covering two weeks of intercepted radio communications, reveal a network of individuals, vessels, and pseudonyms involved in complex interactions. Manual analysis of this data is insufficient. To support his investigation, a visual analytics tool is required to:\n\nIdentify temporal and relational patterns in communication\nHighlight influence structures and key entities\nDetect the use of pseudonyms\nUncover the potential re-involvement of known suspects in illicit activities"
   },
   {
+    "objectID": "Proposal.html#data",
+    "href": "Proposal.html#data",
+    "title": "Proposal",
+    "section": "3. Data",
+    "text": "3. Data\nThe project examines data from The Vast Challenge 2025 the Mini Challenge 3. The dataset contains the 2 weeks of radio intercept by Clepper Jansen to uncover communications between people and organizations in Oceanus. The dataset is a graph network comprised of 1159 nodes and 3226 edges. Each node represents entity (people, organizations or groups), event or relationship, whereas edges represent relationship (i.e. sender and receiver)."
+  },
+  {
     "objectID": "Proposal.html#objectives",
     "href": "Proposal.html#objectives",
     "title": "Proposal",
-    "section": "3. Objectives",
-    "text": "3. Objectives\nOur goal is to build an interactive visual analytics application that enables:\n\nExploration of daily communication patterns and their evolution\nInvestigation of entity influence, focusing on individuals like Nadia Conti\nGrouping and clustering of related people and vessels based on interaction and content\nDetection and mapping of pseudonyms to their likely real-world identities\nSummary of individual activity timelines, particularly those with suspected misconduct"
+    "section": "4. Objectives",
+    "text": "4. Objectives\nOur goal is to build an interactive visual analytics application that enables:\n\nExploration of daily communication patterns and their evolution\nInvestigation of entity influence, focusing on individuals like Nadia Conti\nGrouping and clustering of related people and vessels based on interaction and content\nDetection and mapping of pseudonyms to their likely real-world identities\nSummary of individual activity timelines, particularly those with suspected misconduct"
   },
   {
     "objectID": "Proposal.html#key-features",
     "href": "Proposal.html#key-features",
     "title": "Proposal",
-    "section": "4. Key Features",
-    "text": "4. Key Features\n\nTemporal Graph View: Show message frequency, time-of-day patterns, and shifts over the two-week period.\nKnowledge Graph Explorer: Visualize relationships and interactions among nodes (people, vessels, pseudonyms).\nPseudonym Linker: Identify and visualize shared aliases, repeated use, and communication threads.\nInfluence Mapping: Focused visual breakdown of who influences or communicates with key targets.\nSuspect Spotlight: A dedicated visual dashboard summarizing Nadia Conti’s activity, affiliations, and suspicious connections."
+    "section": "5. Key Features",
+    "text": "5. Key Features\n\nTemporal Graph View: Show message frequency, time-of-day patterns, and shifts over the two-week period.\nKnowledge Graph Explorer: Visualize relationships and interactions among nodes (people, vessels, pseudonyms).\nPseudonym Linker: Identify and visualize shared aliases, repeated use, and communication threads.\nInfluence Mapping: Focused visual breakdown of who influences or communicates with key targets.\nSuspect Spotlight: A dedicated visual dashboard summarizing Nadia Conti’s activity, affiliations, and suspicious connections."
   },
   {
     "objectID": "Proposal.html#expected-outcomes",
     "href": "Proposal.html#expected-outcomes",
     "title": "Proposal",
-    "section": "5. Expected Outcomes",
-    "text": "5. Expected Outcomes\n\nA web-based or R Shiny-powered dashboard that Clepper can use for investigative reporting.\nVisual evidence of hidden groupings, influence networks, and potential misconduct.\nImproved understanding of communication flows on Oceanus.\nA replicable framework for future investigative cases involving communication networks."
+    "section": "6. Expected Outcomes",
+    "text": "6. Expected Outcomes\n\nA web-based or R Shiny-powered dashboard that Clepper can use for investigative reporting.\nVisual evidence of hidden groupings, influence networks, and potential misconduct.\nImproved understanding of communication flows on Oceanus.\nA replicable framework for future investigative cases involving communication networks."
   },
   {
     "objectID": "Proposal.html#tools-technologies",
     "href": "Proposal.html#tools-technologies",
     "title": "Proposal",
-    "section": "6. Tools & Technologies",
-    "text": "6. Tools & Technologies\n\nR, tidygraph, ggraph, visNetwork, Shiny\nText processing: stringr, tidytext\nData visualization: plotly, DT, ggplot2\nKnowledge graph analysis: igraph, ggraph"
+    "section": "7. Tools & Technologies",
+    "text": "7. Tools & Technologies\n\nR, tidygraph, ggraph, visNetwork, Shiny\nText processing: stringr, tidytext\nData visualization: plotly, DT, ggplot2\nKnowledge graph analysis: igraph, ggraph"
   },
   {
     "objectID": "Proposal.html#conclusion",
     "href": "Proposal.html#conclusion",
     "title": "Proposal",
-    "section": "7. Conclusion",
-    "text": "7. Conclusion\nOur proposed visual analytics platform offers a scalable, insightful, and interactive approach to investigating the complex network of communications in Oceanus. It empowers Clepper Jessen to explore narratives of power, secrecy, and influence through intuitive visual tools, ultimately supporting transparency and accountability."
+    "section": "8. Conclusion",
+    "text": "8. Conclusion\nOur proposed visual analytics platform offers a scalable, insightful, and interactive approach to investigating the complex network of communications in Oceanus. It empowers Clepper Jessen to explore narratives of power, secrecy, and influence through intuitive visual tools, ultimately supporting transparency and accountability."
   }
 ]

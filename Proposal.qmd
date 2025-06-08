@@ -64,7 +64,11 @@ Clepper's recordings, covering two weeks of intercepted radio communications, re
 
 -   Uncover the potential re-involvement of known suspects in illicit activities
 
-## **3. Objectives**
+## 3. Data
+
+The project examines data from The Vast Challenge 2025 the <a href ="https://vast-challenge.github.io/2025/MC3.html">Mini Challenge 3</a>. The dataset contains the 2 weeks of radio intercept by Clepper Jansen to uncover communications between people and organizations in Oceanus. The dataset is a graph network comprised of 1159 nodes and 3226 edges. Each node represents entity (people, organizations or groups), event or relationship, whereas edges represent relationship (i.e. sender and receiver).
+
+## **4. Objectives**
 
 Our goal is to build an interactive visual analytics application that enables:
 
@@ -78,7 +82,7 @@ Our goal is to build an interactive visual analytics application that enables:
 
 -   Summary of **individual activity timelines**, particularly those with suspected misconduct
 
-## **4. Key Features**
+## **5. Key Features**
 
 -   **Temporal Graph View**: Show message frequency, time-of-day patterns, and shifts over the two-week period.
 
@@ -90,7 +94,7 @@ Our goal is to build an interactive visual analytics application that enables:
 
 -   **Suspect Spotlight**: A dedicated visual dashboard summarizing Nadia Conti’s activity, affiliations, and suspicious connections.
 
-## **5. Expected Outcomes**
+## **6. Expected Outcomes**
 
 -   A web-based or R Shiny-powered dashboard that Clepper can use for investigative reporting.
 
@@ -100,7 +104,7 @@ Our goal is to build an interactive visual analytics application that enables:
 
 -   A replicable framework for future investigative cases involving communication networks.
 
-## **6. Tools & Technologies**
+## **7. Tools & Technologies**
 
 -   R, tidygraph, ggraph, visNetwork, Shiny
 
@@ -110,6 +114,6 @@ Our goal is to build an interactive visual analytics application that enables:
 
 -   Knowledge graph analysis: `igraph`, `ggraph`
 
-## **7. Conclusion**
+## **8. Conclusion**
 
 Our proposed visual analytics platform offers a scalable, insightful, and interactive approach to investigating the complex network of communications in Oceanus. It empowers Clepper Jessen to explore narratives of power, secrecy, and influence through intuitive visual tools, ultimately supporting transparency and accountability.
