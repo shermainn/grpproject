@@ -1,0 +1,10 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "My Quarto Site"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
