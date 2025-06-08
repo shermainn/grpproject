@@ -1,48 +1,34 @@
 ---
-title: "Proposal"
+title: "Project Proposal"
 format: html
 editor: visual
 ---
-
-# Detective Who
-
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbr9NG1ZkD3p0DDrGtYcf3zOORN1_nSEWcfg&s)
-
-Our team is developing an interactive visual analytics platform to support investigative journalist Clepper Jessen in uncovering the hidden dynamics shaping recent events on the island of Oceanus. Once dominated by fishing, Oceanus has seen rising tensions with the growth of tourism following a crackdown on illegal activities. Now, amid high-profile attention and secretive developments, Clepper has intercepted two weeks of radio communications that may reveal corruption, concealed logistics, and resurfacing criminal networks.
-
-The motivation behind our platform is to help Clepper decode this vast and complex web of interactions using a knowledge graph built from communication data. Given the scale and sensitivity of the information, traditional analysis methods are insufficient. Visual analytics offers a powerful means to surface hidden patterns and relationships.
-
-Key objectives include identifying daily temporal communication patterns and shifts over time, mapping out influence networks of notable figures and organizations, revealing thematic groupings among vessels and individuals, and detecting the use of aliases or pseudonyms—such as “Boss” or “The Lookout.” The platform also investigates the suspected illicit activity of Nadia Conti, a former player in illegal fishing operations.
-
-Main features of the application include an interactive communication timeline, a dynamic knowledge graph explorer, pseudonym detection tools, group discovery based on communication themes, and a dedicated “Nadia Tracker.” These visual tools empower Clepper to trace influence, examine affiliations, and explore the evolving narrative on Oceanus, ultimately helping expose hidden truths and support investigative journalism.
-
-# Proposal
 
 ## **Proposal: Visual Analytics Platform for Investigative Journalism in Oceanus**
 
 ### **Challenge:** Mini Case Challenge 3 — Visualizing Communications and Influence in Oceanus
 
-## **1. Introduction**
+We have chosen Mini Case Challenge 3 -Visualizing Communications and Influence in Oceanus and the [link](https://vast-challenge.github.io/2025/MC3.html) to the challenge can be found here.
+
+# Detective Who
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbr9NG1ZkD3p0DDrGtYcf3zOORN1_nSEWcfg&s)
+
+# **1. Introduction**
 
 The island community of Oceanus is undergoing a period of rapid transformation. As illegal fishing operations are curtailed, new tensions arise in sectors like ocean tourism, especially surrounding high-profile events such as Sailor Shift’s music video shoot. Investigative journalist Clepper Jessen has gathered extensive radio communication data, which now requires advanced visual analysis to uncover hidden dynamics, influence patterns, and potentially illegal behavior.
 
-## **2. Problem Statement**
+# 2. Motivation
 
-Clepper's recordings, covering two weeks of intercepted radio communications, reveal a network of individuals, vessels, and pseudonyms involved in complex interactions. Manual analysis of this data is insufficient. To support his investigation, a visual analytics tool is required to:
+Our team is developing an interactive visual analytics platform to support investigative journalist Clepper Jessen in uncovering the hidden dynamics shaping recent events on the island of Oceanus, relating to high-level Oceanus officials, Sailor Shift's team, local influential families and local conservationist group The Green Guardians. Clepper has intercepted two weeks of radio communications that may reveal corruption, concealed logistics, and resurfacing criminal networks.
 
--   Identify temporal and relational patterns in communication
+The motivation behind our platform is to help Clepper decode this vast and complex web of interactions using a knowledge graph built from communication data. Given the scale and sensitivity of the information, traditional analysis methods are insufficient. Visual analytics offers a powerful means to surface hidden patterns and relationships.
 
--   Highlight influence structures and key entities
+# **3. Objectives**
 
--   Detect the use of pseudonyms
+Key objectives include identifying daily temporal communication patterns and shifts over time, mapping out influence networks of notable figures and organizations, revealing thematic groupings among vessels and individuals, and detecting the use of aliases or pseudonyms—such as “Boss” or “The Lookout.” The platform also investigates the suspected illicit activity of Nadia Conti, a former player in illegal fishing operations.
 
--   Uncover the potential re-involvement of known suspects in illicit activities
-
-## **3. Data**
-
-The project examines data from The Vast Challenge 2025 the <a href ="https://vast-challenge.github.io/2025/MC3.html">Mini Challenge 3</a>. The dataset contains the 2 weeks of radio intercept by Clepper Jansen to uncover communications between people and organizations in Oceanus. The dataset is a graph network comprised of 1159 nodes and 3226 edges. Each node represents entity (people, organizations or groups), event or relationship, whereas edges represent relationship (i.e. sender and receiver).
-
-## **4. Objectives**
+Main features of the application include an interactive communication timeline, a dynamic knowledge graph explorer, pseudonym detection tools, group discovery based on communication themes, and a dedicated “Nadia Tracker.” These visual tools empower Clepper to trace influence, examine affiliations, and explore the evolving narrative on Oceanus, ultimately helping expose hidden truths and support investigative journalism.
 
 Our goal is to build an interactive visual analytics application that enables:
 
@@ -56,11 +42,29 @@ Our goal is to build an interactive visual analytics application that enables:
 
 -   Summary of **individual activity timelines**, particularly those with suspected misconduct
 
-## **5. Key Features**
+# **4. Data**
 
--   **Temporal Graph View**: Show message frequency, time-of-day patterns, and shifts over the two-week period.
+The project examines data from The Vast Challenge 2025 the <a href ="https://vast-challenge.github.io/2025/MC3.html">Mini Challenge 3</a>. The dataset contains the 2 weeks of radio intercept by Clepper Jansen to uncover communications between people and organizations in Oceanus. The dataset is a graph network comprised of 1159 nodes and 3226 edges. Each node represents entity (people, organizations or groups), event or relationship, whereas edges represent relationship (i.e. sender and receiver).
 
--   **Knowledge Graph Explorer**: Visualize relationships and interactions among nodes (people, vessels, pseudonyms).
+# **5. Methodology**
+
+**A. Data Preparation**
+
+-   Cleaning and Shaping data for relevant data for analysis
+
+-   Filtering out relevant nodes into their different entities and relationship: person, vessel, group, relationship, communication and monitoring
+
+-   Filtering out relevant Edges into their different events: communication, event, relationship
+
+**B. Data Exploration and Visualization**
+
+-   **Heatmaps**: Show message frequency, time-of-day patterns, and shifts over the two-week period.
+
+-   **Timelines:** To track specific people and their communication
+
+-   **Word Clouds:** To track the most communicated words by person, organisations and vessels
+
+-   **Knowledge graph explorer:** Visualize relationships and interactions among nodes (people, vessels, pseudonyms)
 
 -   **Pseudonym Linker**: Identify and visualize shared aliases, repeated use, and communication threads.
 
@@ -68,7 +72,13 @@ Our goal is to build an interactive visual analytics application that enables:
 
 -   **Suspect Spotlight**: A dedicated visual dashboard summarizing Nadia Conti’s activity, affiliations, and suspicious connections.
 
-## **6. Expected Outcomes**
+# 6. PROTOTYPE SKETCHES
+
+![](images/clipboard-773903207.png)
+
+Our shiny app will focus on timelines and network visualisation graphs, with heatmaps and wordclouds assisting with the interpretation of data.
+
+# **7. Expected Outcomes**
 
 -   A web-based or R Shiny-powered dashboard that Clepper can use for investigative reporting.
 
@@ -78,7 +88,7 @@ Our goal is to build an interactive visual analytics application that enables:
 
 -   A replicable framework for future investigative cases involving communication networks.
 
-## **7. Tools & Technologies**
+# **8. R Packages**
 
 -   R, tidygraph, ggraph, visNetwork, Shiny
 
@@ -88,6 +98,24 @@ Our goal is to build an interactive visual analytics application that enables:
 
 -   Knowledge graph analysis: `igraph`, `ggraph`
 
-## **8. Conclusion**
+# **9. Project Schedule**
 
-Our proposed visual analytics platform offers a scalable, insightful, and interactive approach to investigating the complex network of communications in Oceanus. It empowers Clepper Jessen to explore narratives of power, secrecy, and influence through intuitive visual tools, ultimately supporting transparency and accountability.
+```{r}
+pacman::p_load(vistime, ggplot2)
+data <- read.csv(text="event,group,start,end,color
+                       ,Project Proposal,2025-06-01,2025-06-08,#a5d6a7
+                       ,Exploratory data analysis,2025-06-01,2025-06-08,#a5d6a7
+                       ,Exploratory data analysis,2025-06-08,2025-06-18,#DD4B39
+                       ,R Quarto/ Netlify,2025-06-01,2025-06-08,#a5d6a7
+                       ,R Quarto/ Netlify,2025-06-08,2025-07-06,#DD4B39
+                       ,R Shiny App,2025-06-08,2025-07-06,#DD4B39
+                       ,Poster,2025-06-18,2025-07-06,#DD4B39
+                       ,User Guide,2025-06-22,2025-07-06,#DD4B39"
+                 )
+                
+proposal_deadline <- as.Date("2025-06-08") 
+
+p <- gg_vistime(data, title = "Project Timeline") 
+p +
+  geom_vline(xintercept = as.numeric(as.POSIXct("2025-06-08")), color = "red", size = 1)
+```
