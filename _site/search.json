@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "Team_Member.html",
-    "href": "Team_Member.html",
-    "title": "The Members",
-    "section": "",
-    "text": "We developed this project for ISSS608 (Visual Analytics and Applications module) in Singapore Management University under Dr. Kam Tin Seong. The members of this team are:\n\nLiaw Ying Ting Celin\nNg Wee Tinn Shermainn\nStefanie Felicia"
-  },
-  {
     "objectID": "Proposal.html",
     "href": "Proposal.html",
     "title": "Project Proposal",
@@ -19,5 +12,12 @@
     "title": "Project Proposal",
     "section": "",
     "text": "We have chosen Mini Case Challenge 3 -Visualizing Communications and Influence in Oceanus and the link to the challenge can be found here."
+  },
+  {
+    "objectID": "Team_Member.html",
+    "href": "Team_Member.html",
+    "title": "The Members",
+    "section": "",
+    "text": "We developed this project for ISSS608 (Visual Analytics and Applications module) in Singapore Management University under Dr. Kam Tin Seong. The members of this team are:\n\nLiaw Ying Ting Celin\nNg Wee Tinn Shermainn\nStefanie Felicia"
   }
 ]

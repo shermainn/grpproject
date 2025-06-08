@@ -1,7 +1,19 @@
 ---
 title: "Project Proposal"
-format: html
-editor: visual
+author: Celin Liaw, Shermainn Ng, Stefanie Felicia
+date: 9 June 2025
+date-modified: "last-modified"
+
+format:
+  html:
+    code-fold: true
+    code-tools: true
+
+execute: 
+  eval: true
+  echo: true
+  warning: false
+  freeze: true
 ---
 
 ## **Proposal: Visual Analytics Platform for Investigative Journalism in Oceanus**
@@ -18,7 +30,7 @@ We have chosen Mini Case Challenge 3 -Visualizing Communications and Influence i
 
 The island community of Oceanus is undergoing a period of rapid transformation. As illegal fishing operations are curtailed, new tensions arise in sectors like ocean tourism, especially surrounding high-profile events such as Sailor Shift’s music video shoot. Investigative journalist Clepper Jessen has gathered extensive radio communication data, which now requires advanced visual analysis to uncover hidden dynamics, influence patterns, and potentially illegal behavior.
 
-# 2. Motivation
+# **2. Motivation**
 
 Our team is developing an interactive visual analytics platform to support investigative journalist Clepper Jessen in uncovering the hidden dynamics shaping recent events on the island of Oceanus, relating to high-level Oceanus officials, Sailor Shift's team, local influential families and local conservationist group The Green Guardians. Clepper has intercepted two weeks of radio communications that may reveal corruption, concealed logistics, and resurfacing criminal networks.
 
