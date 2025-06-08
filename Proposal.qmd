@@ -78,6 +78,38 @@ The project examines data from The Vast Challenge 2025 the <a href ="https://vas
 
 Our shiny app will focus on timelines and network visualisation graphs, with heatmaps and wordclouds assisting with the interpretation of data.
 
+::: panel-tabset
+### Inputs
+
+The Shiny app with have 2 main inputs:
+
+**Date**
+
+As we are interested in patterns between the communication, we should be able to filter by date to get a microview on the communication between person, vessels, groups and organisations
+
+**Nodes (Entity/Event/Relationship)**
+
+This helps to narrow down to the nodes that we are interested in looking at, be it person and relationship or vessels and person, we will be able to select the ones we are interested in and zoom in on the parts.
+
+### Outputs
+
+**Heatmaps**
+
+Shows the pattern of communication
+
+**Timeline**
+
+Show the communication between specific suspects
+
+**Wordcloud**
+
+Show most commonly used words
+
+**Network Graphs**
+
+Show the relationship and frequency of communication
+:::
+
 # **7. Expected Outcomes**
 
 -   A web-based or R Shiny-powered dashboard that Clepper can use for investigative reporting.
@@ -90,11 +122,11 @@ Our shiny app will focus on timelines and network visualisation graphs, with hea
 
 # **8. R Packages**
 
--   R, tidygraph, ggraph, visNetwork, Shiny
+-   R, tidygraph, ggraph, visNetwork, Shiny, dplyr, rcolorbrewer
 
--   Text processing: `stringr`, `tidytext`
+-   Text processing: `stringr`, `tidytext, tidyr`
 
--   Data visualization: `plotly`, `DT`, `ggplot2`
+-   Data visualization: `plotly`, `DT`, `ggplot2, wordcloud`
 
 -   Knowledge graph analysis: `igraph`, `ggraph`
 
