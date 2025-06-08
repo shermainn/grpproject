@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "Proposal.html",
+    "href": "Proposal.html",
+    "title": "Proposal",
+    "section": "",
+    "text": "Our team is developing an interactive visual analytics platform to assist investigative journalist Clepper Jessen in uncovering the hidden dynamics of recent events in Oceanus. With the island undergoing a complex transformation—from a crackdown on illegal fishing to the rise of tourism—the need to understand the evolving power structures, communication patterns, and relationships has become urgent.\nMotivation:\nClepper has intercepted and transcribed two weeks of radio communications revealing possible corruption, secretive dealings, and the re-emergence of figures involved in past illegal activities. The sheer volume and complexity of these interactions call for a robust, intuitive visual tool that can decode the knowledge graph and support investigative storytelling.\nObjectives:\nIdentify temporal patterns in daily communication flows and how they shift over time.\nMap out the influence networks of key individuals, including celebrities, local officials, and conservationists.\nReveal hidden groupings and thematic clusters (e.g., environmentalism, tourism, past illegal fishing actors).\nDetect pseudonyms and aliases, and trace how they are used across conversations and entities.\nInvestigate the role of Nadia Conti in ongoing activities, providing a visual case for or against Clepper’s suspicions.\nMain Features:\nInteractive Communication Timeline: Detects and compares daily messaging patterns, with filters for dates, people, and topics.\nDynamic Knowledge Graph Explorer: Visualizes relationships between people, vessels, and pseudonyms, highlighting clusters and potential influence zones.\nPseudonym Detection Module: Flags repeated pseudonym use, visually links aliases to potential real identities, and identifies shared aliases.\nNadia Tracker: A dedicated visual dashboard summarizing Nadia Conti’s communication footprint, associations, and suspicious behavior patterns.\nTopic Tagging & Group Discovery: Uses content analysis to reveal discussion themes and groupings by interest or affiliation.\nThis application empowers Clepper to dig deeper, trace influence, expose hidden connections, and ultimately, bring transparency to the tangled web of Oceanus."
+  },
+  {
+    "objectID": "Proposal.html#proposal-visual-analytics-platform-for-investigative-journalism-in-oceanus",
+    "href": "Proposal.html#proposal-visual-analytics-platform-for-investigative-journalism-in-oceanus",
+    "title": "Proposal",
+    "section": "Proposal: Visual Analytics Platform for Investigative Journalism in Oceanus",
+    "text": "Proposal: Visual Analytics Platform for Investigative Journalism in Oceanus\n\nTeam Name: [Insert Your Team Name]\n\n\nChallenge: Mini Case Challenge 3 — Visualizing Communications and Influence in Oceanus"
+  },
+  {
+    "objectID": "Proposal.html#introduction",
+    "href": "Proposal.html#introduction",
+    "title": "Proposal",
+    "section": "1. Introduction",
+    "text": "1. Introduction\nThe island community of Oceanus is undergoing a period of rapid transformation. As illegal fishing operations are curtailed, new tensions arise in sectors like ocean tourism, especially surrounding high-profile events such as Sailor Shift’s music video shoot. Investigative journalist Clepper Jessen has gathered extensive radio communication data, which now requires advanced visual analysis to uncover hidden dynamics, influence patterns, and potentially illegal behavior."
+  },
+  {
+    "objectID": "Proposal.html#problem-statement",
+    "href": "Proposal.html#problem-statement",
+    "title": "Proposal",
+    "section": "2. Problem Statement",
+    "text": "2. Problem Statement\nClepper’s recordings, covering two weeks of intercepted radio communications, reveal a network of individuals, vessels, and pseudonyms involved in complex interactions. Manual analysis of this data is insufficient. To support his investigation, a visual analytics tool is required to:\n\nIdentify temporal and relational patterns in communication\nHighlight influence structures and key entities\nDetect the use of pseudonyms\nUncover the potential re-involvement of known suspects in illicit activities"
+  },
+  {
+    "objectID": "Proposal.html#objectives",
+    "href": "Proposal.html#objectives",
+    "title": "Proposal",
+    "section": "3. Objectives",
+    "text": "3. Objectives\nOur goal is to build an interactive visual analytics application that enables:\n\nExploration of daily communication patterns and their evolution\nInvestigation of entity influence, focusing on individuals like Nadia Conti\nGrouping and clustering of related people and vessels based on interaction and content\nDetection and mapping of pseudonyms to their likely real-world identities\nSummary of individual activity timelines, particularly those with suspected misconduct"
+  },
+  {
+    "objectID": "Proposal.html#key-features",
+    "href": "Proposal.html#key-features",
+    "title": "Proposal",
+    "section": "4. Key Features",
+    "text": "4. Key Features\n\nTemporal Graph View: Show message frequency, time-of-day patterns, and shifts over the two-week period.\nKnowledge Graph Explorer: Visualize relationships and interactions among nodes (people, vessels, pseudonyms).\nPseudonym Linker: Identify and visualize shared aliases, repeated use, and communication threads.\nInfluence Mapping: Focused visual breakdown of who influences or communicates with key targets.\nSuspect Spotlight: A dedicated visual dashboard summarizing Nadia Conti’s activity, affiliations, and suspicious connections."
+  },
+  {
+    "objectID": "Proposal.html#expected-outcomes",
+    "href": "Proposal.html#expected-outcomes",
+    "title": "Proposal",
+    "section": "5. Expected Outcomes",
+    "text": "5. Expected Outcomes\n\nA web-based or R Shiny-powered dashboard that Clepper can use for investigative reporting.\nVisual evidence of hidden groupings, influence networks, and potential misconduct.\nImproved understanding of communication flows on Oceanus.\nA replicable framework for future investigative cases involving communication networks."
+  },
+  {
+    "objectID": "Proposal.html#tools-technologies",
+    "href": "Proposal.html#tools-technologies",
+    "title": "Proposal",
+    "section": "6. Tools & Technologies",
+    "text": "6. Tools & Technologies\n\nR, tidygraph, ggraph, visNetwork, Shiny\nText processing: stringr, tidytext\nData visualization: plotly, DT, ggplot2\nKnowledge graph analysis: igraph, ggraph"
+  },
+  {
+    "objectID": "Proposal.html#conclusion",
+    "href": "Proposal.html#conclusion",
+    "title": "Proposal",
+    "section": "7. Conclusion",
+    "text": "7. Conclusion\nOur proposed visual analytics platform offers a scalable, insightful, and interactive approach to investigating the complex network of communications in Oceanus. It empowers Clepper Jessen to explore narratives of power, secrecy, and influence through intuitive visual tools, ultimately supporting transparency and accountability."
+  }
+]
