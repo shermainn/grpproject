@@ -84,7 +84,7 @@ The project examines data from The Vast Challenge 2025 the <a href ="https://vas
 
 -   **Suspect Spotlight**: A dedicated visual dashboard summarizing Nadia Conti’s activity, affiliations, and suspicious connections.
 
-# 6. Prototype Sketches
+# **6. Prototype Sketches**
 
 ![](images/clipboard-773903207.png)
 
