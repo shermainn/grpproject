@@ -1,6 +1,5 @@
 ---
 title: "Proposal"
-author: "Shermainn"
 format: html
 editor: visual
 ---
@@ -85,7 +84,7 @@ Our goal is to build an interactive visual analytics application that enables:
 
 -   Text processing: `stringr`, `tidytext`
 
--   Data visualization: `plotly`, `DT`, `ggplot2`
+-   Data visualization: `plotly`, `DT`, `ggplot2`, `cronologia`
 
 -   Knowledge graph analysis: `igraph`, `ggraph`
 

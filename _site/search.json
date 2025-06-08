@@ -4,14 +4,14 @@
     "href": "Proposal.html",
     "title": "Proposal",
     "section": "",
-    "text": "Our team is developing an interactive visual analytics platform to assist investigative journalist Clepper Jessen in uncovering the hidden dynamics of recent events in Oceanus. With the island undergoing a complex transformation—from a crackdown on illegal fishing to the rise of tourism—the need to understand the evolving power structures, communication patterns, and relationships has become urgent.\n\nMotivation:\nClepper has intercepted and transcribed two weeks of radio communications revealing possible corruption, secretive dealings, and the re-emergence of figures involved in past illegal activities. The sheer volume and complexity of these interactions call for a robust, intuitive visual tool that can decode the knowledge graph and support investigative storytelling.\nObjectives:\n\nIdentify temporal patterns in daily communication flows and how they shift over time.\nMap out the influence networks of key individuals, including celebrities, local officials, and conservationists.\nReveal hidden groupings and thematic clusters (e.g., environmentalism, tourism, past illegal fishing actors).\nDetect pseudonyms and aliases, and trace how they are used across conversations and entities.\nInvestigate the role of Nadia Conti in ongoing activities, providing a visual case for or against Clepper’s suspicions.\n\nMain Features:\n\nInteractive Communication Timeline: Detects and compares daily messaging patterns, with filters for dates, people, and topics.\nDynamic Knowledge Graph Explorer: Visualizes relationships between people, vessels, and pseudonyms, highlighting clusters and potential influence zones.\nPseudonym Detection Module: Flags repeated pseudonym use, visually links aliases to potential real identities, and identifies shared aliases.\nNadia Tracker: A dedicated visual dashboard summarizing Nadia Conti’s communication footprint, associations, and suspicious behavior patterns.\nTopic Tagging & Group Discovery: Uses content analysis to reveal discussion themes and groupings by interest or affiliation.\n\nThis application empowers Clepper to dig deeper, trace influence, expose hidden connections, and ultimately, bring transparency to the tangled web of Oceanus."
+    "text": "Our team is developing an interactive visual analytics platform to support investigative journalist Clepper Jessen in uncovering the hidden dynamics shaping recent events on the island of Oceanus. Once dominated by fishing, Oceanus has seen rising tensions with the growth of tourism following a crackdown on illegal activities. Now, amid high-profile attention and secretive developments, Clepper has intercepted two weeks of radio communications that may reveal corruption, concealed logistics, and resurfacing criminal networks.\nThe motivation behind our platform is to help Clepper decode this vast and complex web of interactions using a knowledge graph built from communication data. Given the scale and sensitivity of the information, traditional analysis methods are insufficient. Visual analytics offers a powerful means to surface hidden patterns and relationships.\nKey objectives include identifying daily temporal communication patterns and shifts over time, mapping out influence networks of notable figures and organizations, revealing thematic groupings among vessels and individuals, and detecting the use of aliases or pseudonyms—such as “Boss” or “The Lookout.” The platform also investigates the suspected illicit activity of Nadia Conti, a former player in illegal fishing operations.\nMain features of the application include an interactive communication timeline, a dynamic knowledge graph explorer, pseudonym detection tools, group discovery based on communication themes, and a dedicated “Nadia Tracker.” These visual tools empower Clepper to trace influence, examine affiliations, and explore the evolving narrative on Oceanus, ultimately helping expose hidden truths and support investigative journalism."
   },
   {
     "objectID": "Proposal.html#proposal-visual-analytics-platform-for-investigative-journalism-in-oceanus",
     "href": "Proposal.html#proposal-visual-analytics-platform-for-investigative-journalism-in-oceanus",
     "title": "Proposal",
     "section": "Proposal: Visual Analytics Platform for Investigative Journalism in Oceanus",
-    "text": "Proposal: Visual Analytics Platform for Investigative Journalism in Oceanus\n\nTeam Name: [Insert Your Team Name]\n\n\nChallenge: Mini Case Challenge 3 — Visualizing Communications and Influence in Oceanus"
+    "text": "Proposal: Visual Analytics Platform for Investigative Journalism in Oceanus\n\nChallenge: Mini Case Challenge 3 — Visualizing Communications and Influence in Oceanus"
   },
   {
     "objectID": "Proposal.html#introduction",
@@ -68,5 +68,12 @@
     "title": "Proposal",
     "section": "8. Conclusion",
     "text": "8. Conclusion\nOur proposed visual analytics platform offers a scalable, insightful, and interactive approach to investigating the complex network of communications in Oceanus. It empowers Clepper Jessen to explore narratives of power, secrecy, and influence through intuitive visual tools, ultimately supporting transparency and accountability."
+  },
+  {
+    "objectID": "Team_Member.html",
+    "href": "Team_Member.html",
+    "title": "The Members",
+    "section": "",
+    "text": "We developed this project for ISSS608 (Visual Analytics and Applications module) in Singapore Management University under Dr. Kam Tin Seong. The members of this team are:\n\nLiaw Ying Ting Celin\nNg Wee Tinn Shermainn\nStefanie Felicia"
   }
 ]

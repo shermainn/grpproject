@@ -3,8 +3,11 @@ project:
   output-dir: _site
 
 website:
-  title: "My Quarto Site"
+  title: "ISSS608 Project"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
+      - href: Proposal.qmd
+        text: Proposal
+    right: 
+      - href: Team_Member.qmd
+        text: Team Members
