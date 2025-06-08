@@ -38,7 +38,7 @@ Clepper's recordings, covering two weeks of intercepted radio communications, re
 
 -   Uncover the potential re-involvement of known suspects in illicit activities
 
-## 3. Data
+## **3. Data**
 
 The project examines data from The Vast Challenge 2025 the <a href ="https://vast-challenge.github.io/2025/MC3.html">Mini Challenge 3</a>. The dataset contains the 2 weeks of radio intercept by Clepper Jansen to uncover communications between people and organizations in Oceanus. The dataset is a graph network comprised of 1159 nodes and 3226 edges. Each node represents entity (people, organizations or groups), event or relationship, whereas edges represent relationship (i.e. sender and receiver).
 
