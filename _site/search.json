@@ -40,5 +40,40 @@
     "title": "Group5",
     "section": "Tasks and Questions:",
     "text": "Tasks and Questions:\nClepper diligently recorded all intercepted radio communications over the last two weeks. With the help of his intern, they have analyzed their content to identify important events and relationships between key players. The result is a knowledge graph describing the last two weeks on Oceanus. Clepper and his intern have spent a large amount of time generating this knowledge graph, and they would now like some assistance using it to answer the following questions.\n\nClepper found that messages frequently came in at around the same time each day.\n\nDevelop a graph-based visual analytics approach to identify any daily temporal patterns in communications.\nHow do these patterns shift over the two weeks of observations?\nFocus on a specific entity and use this information to determine who has influence over them.\n\nClepper has noticed that people often communicate with (or about) the same people or vessels, and that grouping them together may help with the investigation.\n\nUse visual analytics to help Clepper understand and explore the interactions and relationships between vessels and people in the knowledge graph.\nAre there groups that are more closely associated? If so, what are the topic areas that are predominant for each group?\n\nFor example, these groupings could be related to: Environmentalism (known associates of Green Guardians), Sailor Shift, and fishing/leisure vessels.\n\n\nIt was noted by Clepper’s intern that some people and vessels are using pseudonyms to communicate.\n\nExpanding upon your prior visual analytics, determine who is using pseudonyms to communicate, and what these pseudonyms are.\n\nSome that Clepper has already identified include: “Boss”, and “The Lookout”, but there appear to be many more.\nTo complicate the matter, pseudonyms may be used by multiple people or vessels.\n\nDescribe how your visualizations make it easier for Clepper to identify common entities in the knowledge graph.\nHow does your understanding of activities change given your understanding of pseudonyms?\n\nClepper suspects that Nadia Conti, who was formerly entangled in an illegal fishing scheme, may have continued illicit activity within Oceanus.\n\nThrough visual analytics, provide evidence that Nadia is, or is not, doing something illegal.\nSummarize Nadia’s actions visually. Are Clepper’s suspicions justified?\n\n\nReflection Questions\n\nGiven the task to develop visualizations for knowledge graphs, did you find that the challenge pushed you to develop new techniques for visual representation?\nDid you participate in last year’s challenge? If so, did your experience last year help prepare you for this year’s challenge?\nWhat was the most difficult part of working on this year’s data and what could have made it more accessible?"
+  },
+  {
+    "objectID": "Meeting_Minutes.html",
+    "href": "Meeting_Minutes.html",
+    "title": "Meeting Minutes",
+    "section": "",
+    "text": "Date: 22/5/2025\nTime: 11pm -11.30pm\nIn Attendance: Celin Liaw, Shermainn Ng, Stefanie Felicia\n\n\n\n\nDiscussion on project topic(MC1, MC2 or MC3) from VAST CHALLENGE 2025\nDiscussion on questions to answer for take-home 2\n\n\n\n\nWe unanimously agreed on MC3 as the project topic because it looks the most interesting\n\n\n\n\n\nWe decided to take 1-2 questions each for MC3 as there are some questions that require results from the previous questions to answer them\nWe will then compare the final results and take the better ones or incorporate all the results for more clarity\nShermainn: Question 1\nCelin: Question 2 and 3\nStefanie: Question 2 and 4\n\n\n\n\n\nDate: 7/6/2025\nTime: 5pm -5.30pm\nIn Attendance: Celin Liaw, Shermainn Ng, Stefanie Felicia\n\n\n\n\nProposal Check-in\nAction Items\n\n\n\n\nAs our proposal is due tomorrow, we decided to check in with each other’s progress\nOur problem for the proposal is that we are not sure how the final item will look like, so we decided to come up with what we think the final product will look like and to implement it in the proposal\n\n\n\n\n\nDecided to do a prototype sketch with how we imagine the final product to look like as we are not familiar with Shiny yet\n\n\n\nShermainn to create the group project github and do a layout of the proposal headings and fill in the items that she knows based on the question she did\nStefanie to fill in the website and the question that she did for the proposal\nCelin to create the prototype sketch based on the combined information from everyone and finalise the proposal website page"
+  },
+  {
+    "objectID": "Meeting_Minutes.html#agenda",
+    "href": "Meeting_Minutes.html#agenda",
+    "title": "Meeting Minutes",
+    "section": "",
+    "text": "Discussion on project topic(MC1, MC2 or MC3) from VAST CHALLENGE 2025\nDiscussion on questions to answer for take-home 2\n\n\n\n\nWe unanimously agreed on MC3 as the project topic because it looks the most interesting\n\n\n\n\n\nWe decided to take 1-2 questions each for MC3 as there are some questions that require results from the previous questions to answer them\nWe will then compare the final results and take the better ones or incorporate all the results for more clarity\nShermainn: Question 1\nCelin: Question 2 and 3\nStefanie: Question 2 and 4"
+  },
+  {
+    "objectID": "Meeting_Minutes.html#project-meeting-2",
+    "href": "Meeting_Minutes.html#project-meeting-2",
+    "title": "Meeting Minutes",
+    "section": "",
+    "text": "Date: 7/6/2025\nTime: 5pm -5.30pm\nIn Attendance: Celin Liaw, Shermainn Ng, Stefanie Felicia"
+  },
+  {
+    "objectID": "Meeting_Minutes.html#agenda-1",
+    "href": "Meeting_Minutes.html#agenda-1",
+    "title": "Meeting Minutes",
+    "section": "",
+    "text": "Proposal Check-in\nAction Items\n\n\n\n\nAs our proposal is due tomorrow, we decided to check in with each other’s progress\nOur problem for the proposal is that we are not sure how the final item will look like, so we decided to come up with what we think the final product will look like and to implement it in the proposal\n\n\n\n\n\nDecided to do a prototype sketch with how we imagine the final product to look like as we are not familiar with Shiny yet\n\n\n\nShermainn to create the group project github and do a layout of the proposal headings and fill in the items that she knows based on the question she did\nStefanie to fill in the website and the question that she did for the proposal\nCelin to create the prototype sketch based on the combined information from everyone and finalise the proposal website page"
+  },
+  {
+    "objectID": "Meeting_Minutes.html#project-meeting-1",
+    "href": "Meeting_Minutes.html#project-meeting-1",
+    "title": "Meeting Minutes",
+    "section": "",
+    "text": "Date: 22/5/2025\nTime: 11pm -11.30pm\nIn Attendance: Celin Liaw, Shermainn Ng, Stefanie Felicia"
   }
 ]

@@ -8,6 +8,8 @@ website:
     left:
       - href: "Proposal.html"
         text: "Proposal"
+      - href: "Meeting_Minutes.html"
+        text: "Meeting Minutes"
     right: 
       - href: index.qmd
         text: Home
