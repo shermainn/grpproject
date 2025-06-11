@@ -1,13 +1,16 @@
 project:
   type: website
-  output-dir: _site
+  # output-dir: _site
 
 website:
-  title: "ISSS608 Project"
+  title: "Group 5 - ISSS608 Project"
   navbar:
     left:
-      - href: Proposal.qmd
-        text: Proposal
+      - href: "Proposal.html"
+        text: "Proposal"
     right: 
+      - href: index.qmd
+        text: Home
+      - about.qmd
       - href: Team_Member.qmd
         text: Team Members
