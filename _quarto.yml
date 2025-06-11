@@ -13,5 +13,5 @@ website:
     right: 
       - href: index.qmd
         text: Home
-      - href: Team_Member.qmd
+      - href: "Team_Member.html"
         text: Team Members
