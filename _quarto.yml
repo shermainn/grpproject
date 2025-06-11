@@ -13,7 +13,7 @@ website:
     right: 
       - href: index.qmd
         text: Home
-      - href: about.qmd
+      - href: About.qmd
         text: About
       - href: Team_Member.qmd
         text: Team Members
