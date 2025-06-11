@@ -2,64 +2,88 @@
   {
     "objectID": "Proposal.html",
     "href": "Proposal.html",
-    "title": "Proposal",
+    "title": "Project Proposal",
     "section": "",
+<<<<<<< HEAD
     "text": "Our team is developing an interactive visual analytics platform to support investigative journalist Clepper Jessen in uncovering the hidden dynamics shaping recent events on the island of Oceanus. Once dominated by fishing, Oceanus has seen rising tensions with the growth of tourism following a crackdown on illegal activities. Now, amid high-profile attention and secretive developments, Clepper has intercepted two weeks of radio communications that may reveal corruption, concealed logistics, and resurfacing criminal networks.\nThe motivation behind our platform is to help Clepper decode this vast and complex web of interactions using a knowledge graph built from communication data. Given the scale and sensitivity of the information, traditional analysis methods are insufficient. Visual analytics offers a powerful means to surface hidden patterns and relationships.\nKey objectives include identifying daily temporal communication patterns and shifts over time, mapping out influence networks of notable figures and organizations, revealing thematic groupings among vessels and individuals, and detecting the use of aliases or pseudonyms—such as “Boss” or “The Lookout.” The platform also investigates the suspected illicit activity of Nadia Conti, a former player in illegal fishing operations.\nMain features of the application include an interactive communication timeline, a dynamic knowledge graph explorer, pseudonym detection tools, group discovery based on communication themes, and a dedicated “Nadia Tracker.” These visual tools empower Clepper to trace influence, examine affiliations, and explore the evolving narrative on Oceanus, ultimately helping expose hidden truths and support investigative journalism."
+=======
+    "text": "We have chosen Mini Case Challenge 3 -Visualizing Communications and Influence in Oceanus and the link to the challenge can be found here."
+>>>>>>> d2153f44f7c4a97e12e3b56390dd1f6f7222cb8f
   },
   {
     "objectID": "Proposal.html#proposal-visual-analytics-platform-for-investigative-journalism-in-oceanus",
     "href": "Proposal.html#proposal-visual-analytics-platform-for-investigative-journalism-in-oceanus",
+<<<<<<< HEAD
     "title": "Proposal",
     "section": "Proposal: Visual Analytics Platform for Investigative Journalism in Oceanus",
     "text": "Proposal: Visual Analytics Platform for Investigative Journalism in Oceanus\n\nChallenge: Mini Case Challenge 3 — Visualizing Communications and Influence in Oceanus"
+=======
+    "title": "Project Proposal",
+    "section": "",
+    "text": "We have chosen Mini Case Challenge 3 -Visualizing Communications and Influence in Oceanus and the link to the challenge can be found here."
+>>>>>>> d2153f44f7c4a97e12e3b56390dd1f6f7222cb8f
   },
   {
-    "objectID": "Proposal.html#introduction",
-    "href": "Proposal.html#introduction",
-    "title": "Proposal",
-    "section": "1. Introduction",
-    "text": "1. Introduction\nThe island community of Oceanus is undergoing a period of rapid transformation. As illegal fishing operations are curtailed, new tensions arise in sectors like ocean tourism, especially surrounding high-profile events such as Sailor Shift’s music video shoot. Investigative journalist Clepper Jessen has gathered extensive radio communication data, which now requires advanced visual analysis to uncover hidden dynamics, influence patterns, and potentially illegal behavior."
+    "objectID": "Team_Member.html",
+    "href": "Team_Member.html",
+    "title": "The Members",
+    "section": "",
+    "text": "We developed this project for ISSS608 (Visual Analytics and Applications module) in Singapore Management University under Dr. Kam Tin Seong. The members of this team are:\n\nLiaw Ying Ting Celin\nNg Wee Tinn Shermainn\nStefanie Felicia"
   },
   {
-    "objectID": "Proposal.html#problem-statement",
-    "href": "Proposal.html#problem-statement",
-    "title": "Proposal",
-    "section": "2. Problem Statement",
-    "text": "2. Problem Statement\nClepper’s recordings, covering two weeks of intercepted radio communications, reveal a network of individuals, vessels, and pseudonyms involved in complex interactions. Manual analysis of this data is insufficient. To support his investigation, a visual analytics tool is required to:\n\nIdentify temporal and relational patterns in communication\nHighlight influence structures and key entities\nDetect the use of pseudonyms\nUncover the potential re-involvement of known suspects in illicit activities"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Group5",
+    "section": "",
+    "text": "As part of VAST Challenge 2025, my team will investigate the illegal fishing activities that are happening in regulated sectors such as the ocean tourism industry. Clepper Jessen, a former analyst at FishEye and now a seasoned journalist for the Hacklee Herald, collected a complex web of expedited approvals and secretive logistics.\nWe will be focusing on Mini Challenge 3 where participants are provided a knowledge graph created from transcripts of boat radio communications and asked to identify people, roles and the events and locations they talk about to predict when and where an event will take place.\nMore information from the website has been provided below:"
   },
   {
-    "objectID": "Proposal.html#objectives",
-    "href": "Proposal.html#objectives",
-    "title": "Proposal",
-    "section": "3. Objectives",
-    "text": "3. Objectives\nOur goal is to build an interactive visual analytics application that enables:\n\nExploration of daily communication patterns and their evolution\nInvestigation of entity influence, focusing on individuals like Nadia Conti\nGrouping and clustering of related people and vessels based on interaction and content\nDetection and mapping of pseudonyms to their likely real-world identities\nSummary of individual activity timelines, particularly those with suspected misconduct"
+    "objectID": "index.html#background",
+    "href": "index.html#background",
+    "title": "Group5",
+    "section": "Background",
+    "text": "Background\nOver the past decade, the community of Oceanus has faced numerous transformations and challenges evolving from its fishing-centric origins. Following major crackdowns on illegal fishing activities, suspects have shifted investments into more regulated sectors such as the ocean tourism industry, resulting in growing tensions. This increased tourism has recently attracted the likes of international pop star Sailor Shift, who announced plans to film a music video on the island.\nClepper Jessen, a former analyst at FishEye and now a seasoned journalist for the Hacklee Herald, has been keenly observing these rising tensions. Recently, he turned his attention towards the temporary closure of Nemo Reef. By listening to radio communications and utilizing his investigative tools, Clepper uncovered a complex web of expedited approvals and secretive logistics. These efforts revealed a story involving high-level Oceanus officials, Sailor Shift’s team, local influential families, and local conservationist group The Green Guardians, pointing towards a story of corruption and manipulation.\nYour task is to develop new and novel visualizations and visual analytics approaches to help Clepper get to the bottom of this story."
   },
   {
-    "objectID": "Proposal.html#key-features",
-    "href": "Proposal.html#key-features",
-    "title": "Proposal",
-    "section": "4. Key Features",
-    "text": "4. Key Features\n\nTemporal Graph View: Show message frequency, time-of-day patterns, and shifts over the two-week period.\nKnowledge Graph Explorer: Visualize relationships and interactions among nodes (people, vessels, pseudonyms).\nPseudonym Linker: Identify and visualize shared aliases, repeated use, and communication threads.\nInfluence Mapping: Focused visual breakdown of who influences or communicates with key targets.\nSuspect Spotlight: A dedicated visual dashboard summarizing Nadia Conti’s activity, affiliations, and suspicious connections."
+    "objectID": "index.html#tasks-and-questions",
+    "href": "index.html#tasks-and-questions",
+    "title": "Group5",
+    "section": "Tasks and Questions:",
+    "text": "Tasks and Questions:\nClepper diligently recorded all intercepted radio communications over the last two weeks. With the help of his intern, they have analyzed their content to identify important events and relationships between key players. The result is a knowledge graph describing the last two weeks on Oceanus. Clepper and his intern have spent a large amount of time generating this knowledge graph, and they would now like some assistance using it to answer the following questions.\n\nClepper found that messages frequently came in at around the same time each day.\n\nDevelop a graph-based visual analytics approach to identify any daily temporal patterns in communications.\nHow do these patterns shift over the two weeks of observations?\nFocus on a specific entity and use this information to determine who has influence over them.\n\nClepper has noticed that people often communicate with (or about) the same people or vessels, and that grouping them together may help with the investigation.\n\nUse visual analytics to help Clepper understand and explore the interactions and relationships between vessels and people in the knowledge graph.\nAre there groups that are more closely associated? If so, what are the topic areas that are predominant for each group?\n\nFor example, these groupings could be related to: Environmentalism (known associates of Green Guardians), Sailor Shift, and fishing/leisure vessels.\n\n\nIt was noted by Clepper’s intern that some people and vessels are using pseudonyms to communicate.\n\nExpanding upon your prior visual analytics, determine who is using pseudonyms to communicate, and what these pseudonyms are.\n\nSome that Clepper has already identified include: “Boss”, and “The Lookout”, but there appear to be many more.\nTo complicate the matter, pseudonyms may be used by multiple people or vessels.\n\nDescribe how your visualizations make it easier for Clepper to identify common entities in the knowledge graph.\nHow does your understanding of activities change given your understanding of pseudonyms?\n\nClepper suspects that Nadia Conti, who was formerly entangled in an illegal fishing scheme, may have continued illicit activity within Oceanus.\n\nThrough visual analytics, provide evidence that Nadia is, or is not, doing something illegal.\nSummarize Nadia’s actions visually. Are Clepper’s suspicions justified?\n\n\nReflection Questions\n\nGiven the task to develop visualizations for knowledge graphs, did you find that the challenge pushed you to develop new techniques for visual representation?\nDid you participate in last year’s challenge? If so, did your experience last year help prepare you for this year’s challenge?\nWhat was the most difficult part of working on this year’s data and what could have made it more accessible?"
   },
   {
-    "objectID": "Proposal.html#expected-outcomes",
-    "href": "Proposal.html#expected-outcomes",
-    "title": "Proposal",
-    "section": "5. Expected Outcomes",
-    "text": "5. Expected Outcomes\n\nA web-based or R Shiny-powered dashboard that Clepper can use for investigative reporting.\nVisual evidence of hidden groupings, influence networks, and potential misconduct.\nImproved understanding of communication flows on Oceanus.\nA replicable framework for future investigative cases involving communication networks."
+    "objectID": "Meeting_Minutes.html",
+    "href": "Meeting_Minutes.html",
+    "title": "Meeting Minutes",
+    "section": "",
+    "text": "Date: 22/5/2025\nTime: 11pm -11.30pm\nIn Attendance: Celin Liaw, Shermainn Ng, Stefanie Felicia\n\n\n\n\nDiscussion on project topic(MC1, MC2 or MC3) from VAST CHALLENGE 2025\nDiscussion on questions to answer for take-home 2\n\n\n\n\nWe unanimously agreed on MC3 as the project topic because it looks the most interesting\n\n\n\n\n\nWe decided to take 1-2 questions each for MC3 as there are some questions that require results from the previous questions to answer them\nWe will then compare the final results and take the better ones or incorporate all the results for more clarity\nShermainn: Question 1\nCelin: Question 2 and 3\nStefanie: Question 2 and 4\n\n\n\n\n\nDate: 7/6/2025\nTime: 5pm -5.30pm\nIn Attendance: Celin Liaw, Shermainn Ng, Stefanie Felicia\n\n\n\n\nProposal Check-in\nAction Items\n\n\n\n\nAs our proposal is due tomorrow, we decided to check in with each other’s progress\nOur problem for the proposal is that we are not sure how the final item will look like, so we decided to come up with what we think the final product will look like and to implement it in the proposal\n\n\n\n\n\nDecided to do a prototype sketch with how we imagine the final product to look like as we are not familiar with Shiny yet\n\n\n\nShermainn to create the group project github and do a layout of the proposal headings and fill in the items that she knows based on the question she did\nStefanie to fill in the website and the question that she did for the proposal\nCelin to create the prototype sketch based on the combined information from everyone and finalise the proposal website page"
   },
   {
-    "objectID": "Proposal.html#tools-technologies",
-    "href": "Proposal.html#tools-technologies",
-    "title": "Proposal",
-    "section": "6. Tools & Technologies",
-    "text": "6. Tools & Technologies\n\nR, tidygraph, ggraph, visNetwork, Shiny\nText processing: stringr, tidytext\nData visualization: plotly, DT, ggplot2\nKnowledge graph analysis: igraph, ggraph"
+    "objectID": "Meeting_Minutes.html#agenda",
+    "href": "Meeting_Minutes.html#agenda",
+    "title": "Meeting Minutes",
+    "section": "",
+    "text": "Discussion on project topic(MC1, MC2 or MC3) from VAST CHALLENGE 2025\nDiscussion on questions to answer for take-home 2\n\n\n\n\nWe unanimously agreed on MC3 as the project topic because it looks the most interesting\n\n\n\n\n\nWe decided to take 1-2 questions each for MC3 as there are some questions that require results from the previous questions to answer them\nWe will then compare the final results and take the better ones or incorporate all the results for more clarity\nShermainn: Question 1\nCelin: Question 2 and 3\nStefanie: Question 2 and 4"
   },
   {
-    "objectID": "Proposal.html#conclusion",
-    "href": "Proposal.html#conclusion",
-    "title": "Proposal",
-    "section": "7. Conclusion",
-    "text": "7. Conclusion\nOur proposed visual analytics platform offers a scalable, insightful, and interactive approach to investigating the complex network of communications in Oceanus. It empowers Clepper Jessen to explore narratives of power, secrecy, and influence through intuitive visual tools, ultimately supporting transparency and accountability."
+    "objectID": "Meeting_Minutes.html#project-meeting-2",
+    "href": "Meeting_Minutes.html#project-meeting-2",
+    "title": "Meeting Minutes",
+    "section": "",
+    "text": "Date: 7/6/2025\nTime: 5pm -5.30pm\nIn Attendance: Celin Liaw, Shermainn Ng, Stefanie Felicia"
+  },
+  {
+    "objectID": "Meeting_Minutes.html#agenda-1",
+    "href": "Meeting_Minutes.html#agenda-1",
+    "title": "Meeting Minutes",
+    "section": "",
+    "text": "Proposal Check-in\nAction Items\n\n\n\n\nAs our proposal is due tomorrow, we decided to check in with each other’s progress\nOur problem for the proposal is that we are not sure how the final item will look like, so we decided to come up with what we think the final product will look like and to implement it in the proposal\n\n\n\n\n\nDecided to do a prototype sketch with how we imagine the final product to look like as we are not familiar with Shiny yet\n\n\n\nShermainn to create the group project github and do a layout of the proposal headings and fill in the items that she knows based on the question she did\nStefanie to fill in the website and the question that she did for the proposal\nCelin to create the prototype sketch based on the combined information from everyone and finalise the proposal website page"
+  },
+  {
+    "objectID": "Meeting_Minutes.html#project-meeting-1",
+    "href": "Meeting_Minutes.html#project-meeting-1",
+    "title": "Meeting Minutes",
+    "section": "",
+    "text": "Date: 22/5/2025\nTime: 11pm -11.30pm\nIn Attendance: Celin Liaw, Shermainn Ng, Stefanie Felicia"
   }
 ]

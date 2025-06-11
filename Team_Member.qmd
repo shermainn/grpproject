@@ -1,0 +1,12 @@
+---
+title: "The Members"
+format: html
+---
+
+We developed this project for ISSS608 (Visual Analytics and Applications module) in Singapore Management University under Dr. Kam Tin Seong. The members of this team are:
+
+-   <a href = "https://isss608celin.netlify.app/">Liaw Ying Ting Celin</a>
+
+-   <a href = "https://isss608-sherm.netlify.app/">Ng Wee Tinn Shermainn</a>
+
+-   <a href = "https://isss608-ay2025-april.netlify.app/">Stefanie Felicia</a>

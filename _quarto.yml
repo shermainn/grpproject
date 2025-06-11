@@ -1,10 +1,17 @@
 project:
   type: website
-  output-dir: _site
+  # output-dir: _site
 
 website:
-  title: "My Quarto Site"
+  title: "Group 5 - ISSS608 Project"
   navbar:
     left:
+      - href: "Proposal.html"
+        text: "Proposal"
+      - href: "Meeting_Minutes.html"
+        text: "Meeting Minutes"
+    right: 
       - href: index.qmd
         text: Home
+      - href: "Team_Member.html"
+        text: Team Members
