@@ -57,11 +57,28 @@ In Attendance: Celin Liaw, Shermainn Ng, Stefanie Felicia
 ### Agenda Item 2: Action Items
 
 -   Decided to do a prototype sketch with how we imagine the final product to look like as we are not familiar with Shiny yet
-
-<!-- -->
-
 -   Shermainn to create the group project github and do a layout of the proposal headings and fill in the items that she knows based on the question she did
-
 -   Stefanie to fill in the website and the question that she did for the proposal
-
 -   Celin to create the prototype sketch based on the combined information from everyone and finalise the proposal website page
+
+## Project Meeting 3
+
+Date: 11/6/2025
+
+Time: 10pm -10.30pm
+
+In Attendance: Celin Liaw, Shermainn Ng, Stefanie Felicia
+
+## Agenda:
+
+1.  Discussion on Take-Home exercise 3 and submission details
+
+### Agenda Item 1: Take-Home Exercise 3
+
+-   Discussion on data cleaning and setting up of sidebar layout
+
+-   Agreed on a joint sidebar with entities and date selection
+
+-   There will also be a legend for the nodes
+
+-   One person to setup the cleaning and setting up of sidebar layout
