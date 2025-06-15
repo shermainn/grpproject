@@ -1,5 +1,0 @@
----
-title: "About"
-format: html
-editor: visual
----

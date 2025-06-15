@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.42">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -71,10 +71,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d4be639c637f3db3c684c66cefad7e0c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -182,7 +182,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">June 10, 2025</p>
+      <p class="date-modified">June 11, 2025</p>
     </div>
   </div>
     
@@ -203,27 +203,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="detective-who" class="level1">
 <h1>Detective Who</h1>
 <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbr9NG1ZkD3p0DDrGtYcf3zOORN1_nSEWcfg&amp;s.png" class="img-fluid"></p>
-<<<<<<< HEAD
-<p>Our team is developing an interactive visual analytics platform to support investigative journalist Clepper Jessen in uncovering the hidden dynamics shaping recent events on the island of Oceanus. Once dominated by fishing, Oceanus has seen rising tensions with the growth of tourism following a crackdown on illegal activities. Now, amid high-profile attention and secretive developments, Clepper has intercepted two weeks of radio communications that may reveal corruption, concealed logistics, and resurfacing criminal networks.</p>
-<p>The motivation behind our platform is to help Clepper decode this vast and complex web of interactions using a knowledge graph built from communication data. Given the scale and sensitivity of the information, traditional analysis methods are insufficient. Visual analytics offers a powerful means to surface hidden patterns and relationships.</p>
-<p>Key objectives include identifying daily temporal communication patterns and shifts over time, mapping out influence networks of notable figures and organizations, revealing thematic groupings among vessels and individuals, and detecting the use of aliases or pseudonyms—such as “Boss” or “The Lookout.” The platform also investigates the suspected illicit activity of Nadia Conti, a former player in illegal fishing operations.</p>
-<p>Main features of the application include an interactive communication timeline, a dynamic knowledge graph explorer, pseudonym detection tools, group discovery based on communication themes, and a dedicated “Nadia Tracker.” These visual tools empower Clepper to trace influence, examine affiliations, and explore the evolving narrative on Oceanus, ultimately helping expose hidden truths and support investigative journalism.</p>
-</section>
-<section id="proposal" class="level1">
-<h1>Proposal</h1>
-<section id="proposal-visual-analytics-platform-for-investigative-journalism-in-oceanus" class="level2">
-<h2 class="anchored" data-anchor-id="proposal-visual-analytics-platform-for-investigative-journalism-in-oceanus"><strong>Proposal: Visual Analytics Platform for Investigative Journalism in Oceanus</strong></h2>
-<section id="challenge-mini-case-challenge-3-visualizing-communications-and-influence-in-oceanus" class="level3">
-<h3 class="anchored" data-anchor-id="challenge-mini-case-challenge-3-visualizing-communications-and-influence-in-oceanus"><strong>Challenge:</strong> Mini Case Challenge 3 — Visualizing Communications and Influence in Oceanus</h3>
-</section>
-</section>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction"><strong>1. Introduction</strong></h2>
-=======
 </section>
 <section id="introduction" class="level1">
 <h1><strong>1. Introduction</strong></h1>
->>>>>>> d2153f44f7c4a97e12e3b56390dd1f6f7222cb8f
 <p>The island community of Oceanus is undergoing a period of rapid transformation. As illegal fishing operations are curtailed, new tensions arise in sectors like ocean tourism, especially surrounding high-profile events such as Sailor Shift’s music video shoot. Investigative journalist Clepper Jessen has gathered extensive radio communication data, which now requires advanced visual analysis to uncover hidden dynamics, influence patterns, and potentially illegal behavior.</p>
 </section>
 <section id="motivation" class="level1">
@@ -432,6 +414,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -593,6 +577,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
