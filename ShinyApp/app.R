@@ -49,6 +49,12 @@ edges_all <- graph$edges %>%
   mutate(event_date = coalesce(date_from, date_to)) %>%
   select(-date_from, -date_to)
 
+contents <- graph$nodes %>% filter(!is.na(content))
+
+entity_names <- graph$nodes %>%
+  filter(type == "Entity") %>%
+  pull(name) 
+
 # ── 3. UI -------------------------------------------------------------
 ui <- fluidPage(
   titlePanel("Mini Challenge 3"),
@@ -104,7 +110,11 @@ ui <- fluidPage(
                   # original daily plot 
                   tabPanel("Daily Communication Graph & Timeline",
                            plotOutput("dailyPlot")
-                  )
+                  ), 
+                  # timeline graph
+                  tabPanel("Timeline Graph", 
+                           selectInput("search_name", "Person: ", choices=c("All", entity_names), selected=NULL), 
+                           uiOutput("timeline"))
 
       )
     )
@@ -145,6 +155,44 @@ server <- function(input, output, session) {
   edges_r <- reactive({
     ids <- nodes_r()$id
     edges_date() %>% filter(from %in% ids & to %in% ids)
+  })
+  
+  timeline_data <- reactive({
+    contents_filtered <- contents %>%
+      mutate(
+        timestamp = as.POSIXct(timestamp, format = "%Y-%m-%d %H:%M:%S"),
+        date = as.Date(timestamp)
+      ) %>%
+      filter(date >= input$dateRange[1], date <= input$dateRange[2])
+    
+    # If 'All' is selected, return all messages in date range
+    if (input$search_name == "All") {
+      return(contents_filtered %>%
+               mutate(
+                 timestamp_desc = format(timestamp, "%A, %B %d %Y, %H:%M"),
+                 content = as.character(content)
+               ))
+    }
+    name_parts <- unlist(str_split(input$search_name, "\\s+"))
+    if (length(name_parts) >= 3) {
+      # For 3+ words: match full name only
+      search_pattern <- paste0("\\b", input$search_name, "\\b")
+    } else {
+      # For 1–2 words: match full name OR just first name
+      first_name <- name_parts[1]
+      search_pattern <- paste0("\\b(", input$search_name, "|", first_name, ")\\b")
+    }
+    comm_about_person <- contents_filtered %>%
+      filter(str_detect(content, regex(search_pattern, ignore_case = TRUE))) %>%
+      distinct(content, .keep_all = TRUE)
+    
+    timeline_comm <- comm_about_person %>%
+      mutate(
+        timestamp_desc = format(timestamp, "%A, %B %d %Y, %H:%M"),
+        content = as.character(content)
+      )
+    
+    timeline_comm
   })
   
   # --- Data-Table tab ---------------------------------------------------
@@ -375,6 +423,18 @@ server <- function(input, output, session) {
   })
   # --------------------------------------------------------------------
   
+  # -----timeline--------------------------------------------------------
+  output$timeline <- renderUI({
+    df <- timeline_data()
+    if (nrow(df) == 0) {
+      return(HTML("<p>No messages found.</p>"))
+    }
+    create_tml(
+      df = df,
+      smr = "timestamp_desc",
+      dsc = "content"
+    )
+  })
 }
 
 shinyApp(ui, server)
