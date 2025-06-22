@@ -95,7 +95,10 @@ ui <- fluidPage(
                            
                            selectInput("focus_id", "Select by id",
                                        choices = "All", selected = "All"),
-                           visNetworkOutput("pv_net", height = "700px")
+                           visNetworkOutput("pv_net", height = "700px"), 
+                           tags$hr(),
+                           h4("Heatmap: Communication Patterns by Entity"),
+                           plotOutput("heatmap_by_entity", height = "400px"),
                   ),
                       
                   # visNetwork 
@@ -122,6 +125,18 @@ ui <- fluidPage(
 )
 
 # ── 4. Server ---------------------------------------------------------
+#Preprocess data for Heatmap
+edges_with_meta <- edges_all %>%
+  left_join(nodes_all %>% select(id, name, sub_type), by = c("from" = "id")) %>%
+  left_join(events_df %>% select(id, timestamp), by = c("from" = "id")) %>%
+  mutate(
+    timestamp = as.POSIXct(timestamp),
+    date = as.Date(timestamp),
+    hour = format(timestamp, "%H")
+  ) %>%
+  filter(!is.na(date), !is.na(hour))
+
+
 server <- function(input, output, session) {
   
   # ---- a. helpers for your existing network / tables / plots ---------
@@ -193,6 +208,23 @@ server <- function(input, output, session) {
       )
     
     timeline_comm
+  })
+  
+# Heatmap
+  output$heatmap_by_type <- renderPlot({
+    by_type <- edges_with_meta %>%
+      group_by(date, hour, sub_type) %>%
+      summarise(message_count = n(), .groups = "drop")
+    
+    ggplot(by_type, aes(x = hour, y = date, fill = message_count)) +
+      geom_tile() +
+      facet_wrap(~ sub_type) +
+      scale_fill_gradient(low = "white", high = "purple") +
+      theme_minimal() +
+      labs(
+        title = "Communication Patterns by Entity",
+        x = "Hour of Day", y = "Date", fill = "Count"
+      )
   })
   
   # --- Data-Table tab ---------------------------------------------------
