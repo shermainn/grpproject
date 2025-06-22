@@ -1,0 +1,12 @@
+name: shinyapp
+title: ShinyApp
+username: shermainn
+account: shermainn
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 14856808
+bundleId: 10498531
+url: https://shermainn.shinyapps.io/shinyapp/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
