@@ -10,6 +10,8 @@ library(ggraph)
 library(patchwork)
 library(grid)
 library(ggplot2)
+library(cronologia)
+library(stringr)
 
 # ── 1. master colour map ---------------------------------------------
 legend_cols <- c(
