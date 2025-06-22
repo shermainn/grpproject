@@ -98,7 +98,7 @@ ui <- fluidPage(
                            visNetworkOutput("pv_net", height = "700px"), 
                            tags$hr(),
                            h4("Heatmap: Communication Patterns by Entity"),
-                           plotOutput("heatmap_by_type", height = "400px"),
+                           plotOutput("heatmap_by_type", height = "400px")
                   ),
                       
                   # visNetwork 
@@ -133,19 +133,26 @@ server <- function(input, output, session) {
       filter(is.na(event_date) |
                (event_date >= input$dateRange[1] &
                   event_date <= input$dateRange[2]))
-    
-    #Preprocess data for Heatmap
-    edges_with_meta <- reactive({
-      edges_r() %>%
-        left_join(nodes_all %>% select(id, name, sub_type), by = c("from" = "id")) %>%
-        left_join(events_df %>% select(id, timestamp), by = c("from" = "id")) %>%
-        mutate(
-          timestamp = as.POSIXct(timestamp),
-          date = as.Date(timestamp),
-          hour = format(timestamp, "%H")
-        ) %>%
-        filter(!is.na(date), !is.na(hour))
-    })
+  })
+  
+  
+  edges_r <- reactive({
+    ids <- nodes_r()$id
+    edges_date() %>% filter(from %in% ids | to %in% ids)
+  })
+  
+  # Heatmap
+  edges_with_meta <- reactive({
+    edges_r() %>%
+      left_join(nodes_all %>% select(id, name, sub_type), by = c("from" = "id")) %>%
+      left_join(events_df %>% select(id, timestamp), by = c("from" = "id")) %>%
+      mutate(
+        timestamp = as.POSIXct(timestamp),
+        date = as.Date(timestamp),
+        hour = format(timestamp, "%H"),
+        sub_type = ifelse(is.na(sub_type), "Unknown", sub_type)
+      ) %>%
+      filter(!is.na(date), !is.na(hour))
   })
   
   nodes_r <- reactive({
@@ -165,12 +172,6 @@ server <- function(input, output, session) {
       n <- n %>% filter(id %in% ids)
     }
     n
-  })
-  
-  
-  edges_r <- reactive({
-    ids <- nodes_r()$id
-    edges_date() %>% filter(from %in% ids & to %in% ids)
   })
   
   timeline_data <- reactive({
@@ -211,22 +212,40 @@ server <- function(input, output, session) {
     timeline_comm
   })
   
-# Heatmap
+  
+  # Render Heatmap Plot
   output$heatmap_by_type <- renderPlot({
     by_type <- edges_with_meta() %>%
       group_by(date, hour, sub_type) %>%
       summarise(message_count = n(), .groups = "drop")
     
-    ggplot(by_type, aes(x = hour, y = date, fill = message_count)) +
-      geom_tile() +
-      facet_wrap(~ sub_type) +
-      scale_fill_gradient(low = "white", high = "purple") +
-      theme_minimal() +
-      labs(
-        title = "Communication Patterns by Entity",
-        x = "Hour of Day", y = "Date", fill = "Count"
-      )
+    if (nrow(by_type) == 0) {
+      ggplot() +
+        annotate("text", x = 0.5, y = 0.5,
+                 label = "No communication data available for this selection.",
+                 size = 6, hjust = 0.5, vjust = 0.5) +
+        theme_void()
+    } else {
+      by_type$hour <- factor(by_type$hour, levels = sprintf("%02d", 0:23))
+      
+      ggplot(by_type, aes(x = hour, y = date, fill = message_count)) +
+        geom_tile(color = "grey90") +
+        facet_wrap(~ sub_type, scales = "free_y") +
+        scale_fill_gradient(low = "white", high = "purple") +
+        theme_minimal(base_size = 12) +
+        labs(
+          title = "Communication Patterns by Entity Sub-type",
+          x = "Hour of Day",
+          y = "Date",
+          fill = "Message Count"
+        ) +
+        theme(
+          strip.text = element_text(face = "bold"),
+          axis.text.x = element_text(angle = 45, hjust = 1)
+        )
+    }
   })
+  
   
   # --- Data-Table tab ---------------------------------------------------
   output$nodes_table_dt <- renderDT(
