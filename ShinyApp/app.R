@@ -113,7 +113,7 @@ ui <- fluidPage(
                   ),
                   
                   # original daily plot 
-                  tabPanel("Daily Communication Graph & Timeline",
+                  tabPanel("Daily Communication Graph",
                            plotOutput("dailyPlot")
                   ), 
                   # timeline graph
