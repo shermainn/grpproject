@@ -59,6 +59,7 @@ entity_names <- graph$nodes %>%
 
 # ── 3. UI -------------------------------------------------------------
 ui <- fluidPage(
+  
   titlePanel("Mini Challenge 3"),
   sidebarLayout(
     sidebarPanel(
@@ -93,15 +94,28 @@ ui <- fluidPage(
                            )
                   ),
                   
-                  tabPanel("Heatmap & Frequency of Communication",
-                           
-                           selectInput("focus_id", "Select by id",
-                                       choices = "All", selected = "All"),
-                           visNetworkOutput("pv_net", height = "700px"), 
-                           tags$hr(),
-                           h4("Heatmap: Communication Patterns by Entity"),
-                           plotOutput("heatmap_by_type", height = "400px")
+                  tabPanel(
+                    "Heatmap & Frequency of Communication",
+                    
+                    # ── the one selector you created ──
+                    selectInput(
+                      inputId   = "focus_id",
+                      label     = "Select ID (1st dropdown affects both displays while the 2nd dropdown affects network graph only):",
+                      choices   = "All",
+                      selected  = "All",
+                      width     = "260px",
+                      selectize = TRUE
+                    ),
+                    
+                    # ✧✧ focus_id2 block is gone ✧✧
+                    
+                    visNetworkOutput("pv_net", height = "50vh"),
+                    tags$hr(),
+                    h4("Heatmap: Communication Patterns by Entity"),
+                    plotOutput("heatmap_by_type", height = "400px")
                   ),
+                  
+                  
                       
                   # visNetwork 
                   tabPanel("Interactive Network",
@@ -144,18 +158,48 @@ server <- function(input, output, session) {
   })
   
   # Heatmap
+  # --- 1. replace the existing edges_with_meta --------------------------
+  # --- build the data frame that feeds the heat-map --------------------
   edges_with_meta <- reactive({
-    edges_r() %>%
-      left_join(nodes_all %>% select(id, name, sub_type), by = c("from" = "id")) %>%
-      left_join(events_df %>% select(id, timestamp), by = c("from" = "id")) %>%
+    
+    # 1. start from the date-filtered edge set that is already
+    #    restricted to whatever classes the user picked
+    e <- edges_r()
+    
+    # 2. if a focus entity is chosen, keep only edges that touch it
+    if (input$focus_id != "All") {
+      e <- e %>% filter(from == input$focus_id | to == input$focus_id)
+    }
+    
+    # 3. attach sub-types for *both* ends of every edge
+    e %>%
+      left_join(
+        nodes_all %>% select(id, sub_type_from = sub_type),
+        by = c("from" = "id")
+      ) %>%
+      left_join(
+        nodes_all %>% select(id, sub_type_to = sub_type),
+        by = c("to" = "id")
+      ) %>%
+      
+      # 4. use whichever end actually contains an entity label
+      mutate(sub_type = coalesce(sub_type_from, sub_type_to, "Unknown")) %>%
+      select(-sub_type_from, -sub_type_to) %>%
+      
+      # 5. add timestamp → date/hour columns (same as before)
+      left_join(
+        events_df %>% select(id, timestamp),
+        by = c("from" = "id")
+      ) %>%
       mutate(
         timestamp = as.POSIXct(timestamp),
-        date = as.Date(timestamp),
-        hour = format(timestamp, "%H"),
-        sub_type = ifelse(is.na(sub_type), "Unknown", sub_type)
+        date      = as.Date(timestamp),
+        hour      = format(timestamp, "%H")
       ) %>%
       filter(!is.na(date), !is.na(hour))
   })
+  
+  
   
   nodes_r <- reactive({
     req(input$classes)
@@ -438,9 +482,11 @@ server <- function(input, output, session) {
     if (input$focus_id == "All") {
       pv_edges_full()
     } else {
-      pv_edges_full() %>% filter(from == input$focus_id | to == input$focus_id)
+      pv_edges_full() %>% 
+        filter(from == input$focus_id | to == input$focus_id)
     }
   })
+  
   
   pv_nodes <- reactive({
     ids <- unique(c(pv_edges()$from, pv_edges()$to))
