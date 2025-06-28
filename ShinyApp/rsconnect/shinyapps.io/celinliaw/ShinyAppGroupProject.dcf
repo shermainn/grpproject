@@ -5,7 +5,7 @@ account: celinliaw
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 14977788
-bundleId: 10504708
+bundleId: 10532672
 url: https://celinliaw.shinyapps.io/ShinyAppGroupProject/
 version: 1
 asMultiple: FALSE
