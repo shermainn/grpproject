@@ -1,10 +1,45 @@
 [
   {
-    "objectID": "Team_Member.html",
-    "href": "Team_Member.html",
-    "title": "The Members",
+    "objectID": "User_Guide.html",
+    "href": "User_Guide.html",
+    "title": "Application User Guide",
     "section": "",
-    "text": "We developed this project for ISSS608 (Visual Analytics and Applications module) in Singapore Management University under Dr. Kam Tin Seong. The members of this team are:\n\nLiaw Ying Ting Celin\nNg Wee Tinn Shermainn\nStefanie Felicia"
+    "text": "Communication Analysis of Entities Using Shiny Application\n\n1. Filters \nUse the filters on the left-hand side of the shiny application to select the number of entities they are interested in. \n\nUser to select from the dropdown menu the number of entities they are interested in.\nUser to drag the slider to the desired dates from the Event-date window. The dates are between the 14 days period ranging from 2040-10-01 to 2040-10-15.\nUser to check/uncheck to keep isolated nodes on the plots shown.\nLegend is provided based on the colours for the “Frequency of Communication” and “Interactive Network” plots.\n\n\n\nThere is a total of 5 tabs on the shiny application: \n\nData Table\nHeatmap & Frequency of Communication\nInteractive Network\nDaily Communication Graph\nTimeline Graph\n\n\nUser to select the tab that they are interested in.\n\n\n\n\n2. Data Table\nThis tab shows the nodes and edges used in the analysis for the following plots and graphs.\n\nUser to select the entries that they are interested in.\nEntries will be highlighted in blue when selected.\n\n\n\n\n\n3. Heatmap and Frequency of Communication\n\nUser can select a specific individual from the dropdown list to see the frequency of communication or who the specific entity interacts with. The highlighted entities in green show their communication patterns. When the mouse is hovering over the entity, the frequency of the communication (shows as “count”) will be displayed.\nHeatmap will show the corresponding communication patterns based on the selected individual. \n\n\n\n\n\n\n4. Interactive Network\n\nThere is a dropdown list where the user can select an entity to see its network interactivity.\n\n\n\n\n5. Daily Communication Graph\n\nUser can use the filter (as mentioned above in “1. Filters”) to select the desired dates to see selected entities’ daily communication between other entities. \n\n\n\n\n6. Timeline Graph\n\n use the filter (as mentioned above in “1. Filters”) to select the desired dates to see selected entities’ communication content based on the selected dates."
+  },
+  {
+    "objectID": "Proposal.html",
+    "href": "Proposal.html",
+    "title": "Project Proposal",
+    "section": "",
+    "text": "We have chosen Mini Case Challenge 3 -Visualizing Communications and Influence in Oceanus and the link to the challenge can be found here."
+  },
+  {
+    "objectID": "Proposal.html#proposal-visual-analytics-platform-for-investigative-journalism-in-oceanus",
+    "href": "Proposal.html#proposal-visual-analytics-platform-for-investigative-journalism-in-oceanus",
+    "title": "Project Proposal",
+    "section": "",
+    "text": "We have chosen Mini Case Challenge 3 -Visualizing Communications and Influence in Oceanus and the link to the challenge can be found here."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Group5",
+    "section": "",
+    "text": "As part of VAST Challenge 2025, my team will investigate the illegal fishing activities that are happening in regulated sectors such as the ocean tourism industry. Clepper Jessen, a former analyst at FishEye and now a seasoned journalist for the Hacklee Herald, collected a complex web of expedited approvals and secretive logistics.\nWe will be focusing on Mini Challenge 3 where participants are provided a knowledge graph created from transcripts of boat radio communications and asked to identify people, roles and the events and locations they talk about to predict when and where an event will take place.\nMore information from the website has been provided below:"
+  },
+  {
+    "objectID": "index.html#background",
+    "href": "index.html#background",
+    "title": "Group5",
+    "section": "Background",
+    "text": "Background\nOver the past decade, the community of Oceanus has faced numerous transformations and challenges evolving from its fishing-centric origins. Following major crackdowns on illegal fishing activities, suspects have shifted investments into more regulated sectors such as the ocean tourism industry, resulting in growing tensions. This increased tourism has recently attracted the likes of international pop star Sailor Shift, who announced plans to film a music video on the island.\nClepper Jessen, a former analyst at FishEye and now a seasoned journalist for the Hacklee Herald, has been keenly observing these rising tensions. Recently, he turned his attention towards the temporary closure of Nemo Reef. By listening to radio communications and utilizing his investigative tools, Clepper uncovered a complex web of expedited approvals and secretive logistics. These efforts revealed a story involving high-level Oceanus officials, Sailor Shift’s team, local influential families, and local conservationist group The Green Guardians, pointing towards a story of corruption and manipulation.\nYour task is to develop new and novel visualizations and visual analytics approaches to help Clepper get to the bottom of this story."
+  },
+  {
+    "objectID": "index.html#tasks-and-questions",
+    "href": "index.html#tasks-and-questions",
+    "title": "Group5",
+    "section": "Tasks and Questions:",
+    "text": "Tasks and Questions:\nClepper diligently recorded all intercepted radio communications over the last two weeks. With the help of his intern, they have analyzed their content to identify important events and relationships between key players. The result is a knowledge graph describing the last two weeks on Oceanus. Clepper and his intern have spent a large amount of time generating this knowledge graph, and they would now like some assistance using it to answer the following questions.\n\nClepper found that messages frequently came in at around the same time each day.\n\nDevelop a graph-based visual analytics approach to identify any daily temporal patterns in communications.\nHow do these patterns shift over the two weeks of observations?\nFocus on a specific entity and use this information to determine who has influence over them.\n\nClepper has noticed that people often communicate with (or about) the same people or vessels, and that grouping them together may help with the investigation.\n\nUse visual analytics to help Clepper understand and explore the interactions and relationships between vessels and people in the knowledge graph.\nAre there groups that are more closely associated? If so, what are the topic areas that are predominant for each group?\n\nFor example, these groupings could be related to: Environmentalism (known associates of Green Guardians), Sailor Shift, and fishing/leisure vessels.\n\n\nIt was noted by Clepper’s intern that some people and vessels are using pseudonyms to communicate.\n\nExpanding upon your prior visual analytics, determine who is using pseudonyms to communicate, and what these pseudonyms are.\n\nSome that Clepper has already identified include: “Boss”, and “The Lookout”, but there appear to be many more.\nTo complicate the matter, pseudonyms may be used by multiple people or vessels.\n\nDescribe how your visualizations make it easier for Clepper to identify common entities in the knowledge graph.\nHow does your understanding of activities change given your understanding of pseudonyms?\n\nClepper suspects that Nadia Conti, who was formerly entangled in an illegal fishing scheme, may have continued illicit activity within Oceanus.\n\nThrough visual analytics, provide evidence that Nadia is, or is not, doing something illegal.\nSummarize Nadia’s actions visually. Are Clepper’s suspicions justified?\n\n\nReflection Questions\n\nGiven the task to develop visualizations for knowledge graphs, did you find that the challenge pushed you to develop new techniques for visual representation?\nDid you participate in last year’s challenge? If so, did your experience last year help prepare you for this year’s challenge?\nWhat was the most difficult part of working on this year’s data and what could have made it more accessible?"
   },
   {
     "objectID": "Meeting_Minutes.html",
@@ -56,45 +91,10 @@
     "text": "Discussion on Take-Home exercise 3 and submission details\n\n\n\n\nDiscussion on data cleaning and setting up of sidebar layout\nAgreed on a joint sidebar with entities and date selection\nThere will also be a legend for the nodes\nOne person to setup the cleaning and setting up of sidebar layout"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Group5",
+    "objectID": "Team_Member.html",
+    "href": "Team_Member.html",
+    "title": "The Members",
     "section": "",
-    "text": "As part of VAST Challenge 2025, my team will investigate the illegal fishing activities that are happening in regulated sectors such as the ocean tourism industry. Clepper Jessen, a former analyst at FishEye and now a seasoned journalist for the Hacklee Herald, collected a complex web of expedited approvals and secretive logistics.\nWe will be focusing on Mini Challenge 3 where participants are provided a knowledge graph created from transcripts of boat radio communications and asked to identify people, roles and the events and locations they talk about to predict when and where an event will take place.\nMore information from the website has been provided below:"
-  },
-  {
-    "objectID": "index.html#background",
-    "href": "index.html#background",
-    "title": "Group5",
-    "section": "Background",
-    "text": "Background\nOver the past decade, the community of Oceanus has faced numerous transformations and challenges evolving from its fishing-centric origins. Following major crackdowns on illegal fishing activities, suspects have shifted investments into more regulated sectors such as the ocean tourism industry, resulting in growing tensions. This increased tourism has recently attracted the likes of international pop star Sailor Shift, who announced plans to film a music video on the island.\nClepper Jessen, a former analyst at FishEye and now a seasoned journalist for the Hacklee Herald, has been keenly observing these rising tensions. Recently, he turned his attention towards the temporary closure of Nemo Reef. By listening to radio communications and utilizing his investigative tools, Clepper uncovered a complex web of expedited approvals and secretive logistics. These efforts revealed a story involving high-level Oceanus officials, Sailor Shift’s team, local influential families, and local conservationist group The Green Guardians, pointing towards a story of corruption and manipulation.\nYour task is to develop new and novel visualizations and visual analytics approaches to help Clepper get to the bottom of this story."
-  },
-  {
-    "objectID": "index.html#tasks-and-questions",
-    "href": "index.html#tasks-and-questions",
-    "title": "Group5",
-    "section": "Tasks and Questions:",
-    "text": "Tasks and Questions:\nClepper diligently recorded all intercepted radio communications over the last two weeks. With the help of his intern, they have analyzed their content to identify important events and relationships between key players. The result is a knowledge graph describing the last two weeks on Oceanus. Clepper and his intern have spent a large amount of time generating this knowledge graph, and they would now like some assistance using it to answer the following questions.\n\nClepper found that messages frequently came in at around the same time each day.\n\nDevelop a graph-based visual analytics approach to identify any daily temporal patterns in communications.\nHow do these patterns shift over the two weeks of observations?\nFocus on a specific entity and use this information to determine who has influence over them.\n\nClepper has noticed that people often communicate with (or about) the same people or vessels, and that grouping them together may help with the investigation.\n\nUse visual analytics to help Clepper understand and explore the interactions and relationships between vessels and people in the knowledge graph.\nAre there groups that are more closely associated? If so, what are the topic areas that are predominant for each group?\n\nFor example, these groupings could be related to: Environmentalism (known associates of Green Guardians), Sailor Shift, and fishing/leisure vessels.\n\n\nIt was noted by Clepper’s intern that some people and vessels are using pseudonyms to communicate.\n\nExpanding upon your prior visual analytics, determine who is using pseudonyms to communicate, and what these pseudonyms are.\n\nSome that Clepper has already identified include: “Boss”, and “The Lookout”, but there appear to be many more.\nTo complicate the matter, pseudonyms may be used by multiple people or vessels.\n\nDescribe how your visualizations make it easier for Clepper to identify common entities in the knowledge graph.\nHow does your understanding of activities change given your understanding of pseudonyms?\n\nClepper suspects that Nadia Conti, who was formerly entangled in an illegal fishing scheme, may have continued illicit activity within Oceanus.\n\nThrough visual analytics, provide evidence that Nadia is, or is not, doing something illegal.\nSummarize Nadia’s actions visually. Are Clepper’s suspicions justified?\n\n\nReflection Questions\n\nGiven the task to develop visualizations for knowledge graphs, did you find that the challenge pushed you to develop new techniques for visual representation?\nDid you participate in last year’s challenge? If so, did your experience last year help prepare you for this year’s challenge?\nWhat was the most difficult part of working on this year’s data and what could have made it more accessible?"
-  },
-  {
-    "objectID": "Proposal.html",
-    "href": "Proposal.html",
-    "title": "Project Proposal",
-    "section": "",
-    "text": "We have chosen Mini Case Challenge 3 -Visualizing Communications and Influence in Oceanus and the link to the challenge can be found here."
-  },
-  {
-    "objectID": "Proposal.html#proposal-visual-analytics-platform-for-investigative-journalism-in-oceanus",
-    "href": "Proposal.html#proposal-visual-analytics-platform-for-investigative-journalism-in-oceanus",
-    "title": "Project Proposal",
-    "section": "",
-    "text": "We have chosen Mini Case Challenge 3 -Visualizing Communications and Influence in Oceanus and the link to the challenge can be found here."
-  },
-  {
-    "objectID": "User_Guide.html",
-    "href": "User_Guide.html",
-    "title": "Application User Guide",
-    "section": "",
-    "text": "Communication Analysis of Entities Using Shiny Application\n\n1. Filters \nUse the filters on the left-hand side of the shiny application to select the number of entities they are interested in. \n\nUser to select from the dropdown menu the number of entities they are interested in.\nUser to drag the slider to the desired dates from the Event-date window. The dates are between the 14 days period ranging from 2040-10-01 to 2040-10-15.\nUser to check/uncheck to keep isolated nodes on the plots shown.\nLegend is provided based on the colours for the “Frequency of Communication” and “Interactive Network” plots.\n\n\n\nThere is a total of 5 tabs on the shiny application: \n\nData Table\nHeatmap & Frequency of Communication\nInteractive Network\nDaily Communication Graph\nTimeline Graph\n\n\nUser to select the tab that they are interested in.\n\n\n\n\n2. Data Table\nThis tab shows the nodes and edges used in the analysis for the following plots and graphs.\n\nUser to select the entries that they are interested in.\nEntries will be highlighted in blue when selected.\n\n\n\n\n\n3. Heatmap and Frequency of Communication\n\nUser can select a specific individual from the dropdown list to see the frequency of communication or who the specific entity interacts with. The highlighted entities in green show their communication patterns. When the mouse is hovering over the entity, the frequency of the communication (shows as “count”) will be displayed.\nHeatmap will show the corresponding communication patterns based on the selected individual. \n\n\n\n\n\n\n4. Interactive Network\n\nThere is a dropdown list where the user can select an entity to see its network interactivity.\n\n\n\n\n5. Daily Communication Graph\n\nUser can use the filter (as mentioned above in “1. Filters”) to select the desired dates to see selected entities’ daily communication between other entities. \n\n\n\n\n6. Timeline Graph\n\n use the filter (as mentioned above in “1. Filters”) to select the desired dates to see selected entities’ communication content based on the selected dates."
+    "text": "We developed this project for ISSS608 (Visual Analytics and Applications module) in Singapore Management University under Dr. Kam Tin Seong. The members of this team are:\n\nLiaw Ying Ting Celin\nNg Wee Tinn Shermainn\nStefanie Felicia"
   }
 ]
