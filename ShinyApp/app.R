@@ -120,10 +120,6 @@ ui <- fluidPage(
                   # visNetwork 
                   tabPanel("Interactive Network",
                            visNetworkOutput("net", height = "800px"), br(),
-                           tabsetPanel(type = "tabs",
-                                       tabPanel("Nodes", DTOutput("nodes_table")),
-                                       tabPanel("Edges", DTOutput("edges_table"))
-                           )
                   ),
                   
                   # original daily plot 
@@ -183,7 +179,16 @@ server <- function(input, output, session) {
       ) %>%
       
       # 4. use whichever end actually contains an entity label
-      mutate(sub_type = coalesce(sub_type_from, sub_type_to, "Unknown")) %>%
+      # 4. use the chosen entity’s label if a focus is set, otherwise keep the
+      #    original sub-type
+      mutate(
+        sub_type = if (input$focus_id != "All") {
+          # label of the node picked in the first dropdown
+          nodes_all$label[match(input$focus_id, nodes_all$id)]
+        } else {
+          coalesce(sub_type_from, sub_type_to, "Unknown")
+        }
+      ) %>%
       select(-sub_type_from, -sub_type_to) %>%
       
       # 5. add timestamp → date/hour columns (same as before)

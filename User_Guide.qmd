@@ -12,11 +12,13 @@ Use the filters on the left-hand side of the shiny application to select the num
 
 1.  User to select from the dropdown menu the number of entities they are interested in.
 
-2.  User to drag the slider to the desired dates from the Event-date window. The dates are between the 14 days period ranging from 2040-10-01 to 2040-10-15.
+2.  Click on the entity and press "Delete" on your keyboard to remove entities
 
-3.  User to check/uncheck to keep isolated nodes on the plots shown.
+3.  User to drag the slider to the desired dates from the Event-date window. The dates are between the 14 days period ranging from 2040-10-01 to 2040-10-15.
 
-4.  Legend is provided based on the colours for the “Frequency of Communication” and “Interactive Network” plots.
+4.  User to check/uncheck to keep isolated nodes on the plots shown.
+
+5.  Legend is provided based on the colours for the “Frequency of Communication” and “Interactive Network” plots.
 
 ![](New%20folder/Picture1.png)
 
@@ -52,21 +54,26 @@ This tab shows the nodes and edges used in the analysis for the following plots 
 
 # 3. Heatmap and Frequency of Communication
 
-1.  User can select a specific individual from the dropdown list to see the frequency of communication or who the specific entity interacts with. The highlighted entities in green show their communication patterns. When the mouse is hovering over the entity, the frequency of the communication (shows as “count”) will be displayed.
+1.  User can select a specific individual from the 1st dropdown list to see the frequency of communication or who the specific entity interacts with. The highlighted entities in green show their communication patterns. When the mouse is hovering over the entity, the frequency of the communication (shows as “count”) will be displayed.
 
-2.  Heatmap will show the corresponding communication patterns based on the selected individual. 
+2.  Heatmap below will show the corresponding communication patterns based on the selected individual from the 1st dropdown.
 
-![](New%20folder/Picture6.png)
+3.  A 2nd dropdown can be selected to isolate the 2 entities the user is interested in.
 
-![](New%20folder/Picture7.png)
+![](images/clipboard-2625258250.png)
 
-![](New%20folder/Picture8.png)
+![](images/clipboard-1978273361.png)
+
+![](images/clipboard-7705481.png)
 
 # 4. Interactive Network
 
 1.  There is a dropdown list where the user can select an entity to see its network interactivity.
+2.  It can be used to find out the relationship between 2 entities.
 
-![](New%20folder/Picture9.png)
+![](images/clipboard-3794123370.png)
+
+![](images/clipboard-2791109442.png)
 
 # 5. Daily Communication Graph
 
@@ -76,6 +83,7 @@ This tab shows the nodes and edges used in the analysis for the following plots 
 
 # 6. Timeline Graph
 
-1.   use the filter (as mentioned above in “1. Filters”) to select the desired dates to see selected entities’ communication content based on the selected dates.
+1.  Use the filter (as mentioned above in “1. Filters”) to select the desired dates to see selected entities’ communication content based on the selected dates.
+2.  Additional filters can be applied using the dropdown in the tab to select specific entities and their conversations
 
-![](New%20folder/Picture11.png)
+![](images/clipboard-3738872340.png)
