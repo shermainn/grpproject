@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Group5 – Group 5 - ISSS608 Project</title>
+<title>Application User Guide – Group 5 - ISSS608 Project</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -97,13 +97,13 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Meeting Minutes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./User_Guide.html"> 
+    <a class="nav-link active" href="./User_Guide.html" aria-current="page"> 
 <span class="menu-text">User Guide</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -127,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Group5</h1>
+<h1 class="title">Application User Guide</h1>
 </div>
 
 
@@ -144,64 +144,73 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="detective-who" class="level1">
-<h1>Detective Who</h1>
-<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbr9NG1ZkD3p0DDrGtYcf3zOORN1_nSEWcfg&amp;s.png" class="img-fluid"></p>
-<p>As part of <a href="https://vast-challenge.github.io/2025/index.html">VAST Challenge 2025</a>, my team will investigate the illegal fishing activities that are happening in regulated sectors such as the ocean tourism industry. Clepper Jessen, a former analyst at FishEye and now a seasoned journalist for the Hacklee Herald, collected a complex web of expedited approvals and secretive logistics.</p>
-<p>We will be focusing on <a href="https://vast-challenge.github.io/2025/MC3.html">Mini Challenge 3</a> where participants are provided a knowledge graph created from transcripts of boat radio communications and asked to identify people, roles and the events and locations they talk about to predict when and where an event will take place.</p>
-<p>More information from the website has been provided below:</p>
-</section>
-<section id="mini-challenge-3" class="level1">
-<h1>Mini-Challenge 3</h1>
-<section id="background" class="level2">
-<h2 class="anchored" data-anchor-id="background">Background</h2>
-<p>Over the past decade, the community of Oceanus has faced numerous transformations and challenges evolving from its fishing-centric origins. Following major crackdowns on illegal fishing activities, suspects have shifted investments into more regulated sectors such as the ocean tourism industry, resulting in growing tensions. This increased tourism has recently attracted the likes of international pop star Sailor Shift, who announced plans to film a music video on the island.</p>
-<p>Clepper Jessen, a former analyst at FishEye and now a seasoned journalist for the Hacklee Herald, has been keenly observing these rising tensions. Recently, he turned his attention towards the temporary closure of Nemo Reef. By listening to radio communications and utilizing his investigative tools, Clepper uncovered a complex web of expedited approvals and secretive logistics. These efforts revealed a story involving high-level Oceanus officials, Sailor Shift’s team, local influential families, and local conservationist group The Green Guardians, pointing towards a story of corruption and manipulation.</p>
-<p>Your task is to develop new and novel visualizations and visual analytics approaches to help Clepper get to the bottom of this story.</p>
-</section>
-<section id="tasks-and-questions" class="level2">
-<h2 class="anchored" data-anchor-id="tasks-and-questions">Tasks and Questions:</h2>
-<p>Clepper diligently recorded all intercepted radio communications over the last two weeks. With the help of his intern, they have analyzed their content to identify important events and relationships between key players. The result is a knowledge graph describing the last two weeks on Oceanus. Clepper and his intern have spent a large amount of time generating this knowledge graph, and they would now like some assistance using it to answer the following questions.</p>
+<p>Communication Analysis of Entities Using Shiny Application</p>
+<section id="filters" class="level1">
+<h1>1. Filters&nbsp;</h1>
+<p>Use the filters on the left-hand side of the shiny application to select the number of entities they are interested in.&nbsp;</p>
 <ol type="1">
-<li><p>Clepper found that messages frequently came in at around the same time each day.</p>
-<ol type="1">
-<li><p>Develop a graph-based visual analytics approach to identify any daily temporal patterns in communications.</p></li>
-<li><p>How do these patterns shift over the two weeks of observations?</p></li>
-<li><p>Focus on a specific entity and use this information to determine who has influence over them.</p></li>
-</ol></li>
-<li><p>Clepper has noticed that people often communicate with (or about) the same people or vessels, and that grouping them together may help with the investigation.</p>
-<ol type="1">
-<li><p>Use visual analytics to help Clepper understand and explore the interactions and relationships between vessels and people in the knowledge graph.</p></li>
-<li><p>Are there groups that are more closely associated? If so, what are the topic areas that are predominant for each group?</p>
-<ul>
-<li>For example, these groupings could be related to: Environmentalism (known associates of Green Guardians), Sailor Shift, and fishing/leisure vessels.</li>
-</ul></li>
-</ol></li>
-<li><p>It was noted by Clepper’s intern that some people and vessels are using pseudonyms to communicate.</p>
-<ol type="1">
-<li><p>Expanding upon your prior visual analytics, determine who is using pseudonyms to communicate, and what these pseudonyms are.</p>
-<ul>
-<li><p>Some that Clepper has already identified include: “Boss”, and “The Lookout”, but there appear to be many more.</p></li>
-<li><p>To complicate the matter, pseudonyms may be used by multiple people or vessels.</p></li>
-</ul></li>
-<li><p>Describe how your visualizations make it easier for Clepper to identify common entities in the knowledge graph.</p></li>
-<li><p>How does your understanding of activities change given your understanding of pseudonyms?</p></li>
-</ol></li>
-<li><p>Clepper suspects that Nadia Conti, who was formerly entangled in an illegal fishing scheme, may have continued illicit activity within Oceanus.</p>
-<ol type="1">
-<li><p>Through visual analytics, provide evidence that Nadia is, or is not, doing something illegal.</p></li>
-<li><p>Summarize Nadia’s actions visually. Are Clepper’s suspicions justified?</p></li>
-</ol></li>
+<li><p>User to select from the dropdown menu the number of entities they are interested in.</p></li>
+<li><p>User to drag the slider to the desired dates from the Event-date window. The dates are between the 14 days period ranging from 2040-10-01 to 2040-10-15.</p></li>
+<li><p>User to check/uncheck to keep isolated nodes on the plots shown.</p></li>
+<li><p>Legend is provided based on the colours for the “Frequency of Communication” and “Interactive Network” plots.</p></li>
 </ol>
-<p><strong>Reflection Questions</strong></p>
+<p><img src="New folder/Picture1.png" class="img-fluid"></p>
+<p><img src="New folder/Picture2.png" class="img-fluid"></p>
+<p>There is a total of 5 tabs on the shiny application:&nbsp;</p>
 <ul>
-<li><p>Given the task to develop visualizations for knowledge graphs, did you find that the challenge pushed you to develop new techniques for visual representation?</p></li>
-<li><p>Did you participate in last year’s challenge? If so, did your experience last year help prepare you for this year’s challenge?</p></li>
-<li><p>What was the most difficult part of working on this year’s data and what could have made it more accessible?</p></li>
+<li><p>Data Table</p></li>
+<li><p>Heatmap &amp; Frequency of Communication</p></li>
+<li><p>Interactive Network</p></li>
+<li><p>Daily Communication Graph</p></li>
+<li><p>Timeline Graph</p></li>
 </ul>
-
-
+<ol type="1">
+<li>User to select the tab that they are interested in.</li>
+</ol>
+<p><img src="New folder/Picture3.png" class="img-fluid"></p>
 </section>
+<section id="data-table" class="level1">
+<h1>2. Data Table</h1>
+<p>This tab shows the nodes and edges used in the analysis for the following plots and graphs.</p>
+<ol type="1">
+<li><p>User to select the entries that they are interested in.</p></li>
+<li><p>Entries will be highlighted in blue when selected.</p></li>
+</ol>
+<p><img src="New folder/Picture4.png" class="img-fluid"></p>
+<p><img src="New folder/Picture5.png" class="img-fluid"></p>
+</section>
+<section id="heatmap-and-frequency-of-communication" class="level1">
+<h1>3. Heatmap and Frequency of Communication</h1>
+<ol type="1">
+<li><p>User can select a specific individual from the dropdown list to see the frequency of communication or who the specific entity interacts with. The highlighted entities in green show their communication patterns. When the mouse is hovering over the entity, the frequency of the communication (shows as “count”) will be displayed.</p></li>
+<li><p>Heatmap will show the corresponding communication patterns based on the selected individual.&nbsp;</p></li>
+</ol>
+<p><img src="New folder/Picture6.png" class="img-fluid"></p>
+<p><img src="New folder/Picture7.png" class="img-fluid"></p>
+<p><img src="New folder/Picture8.png" class="img-fluid"></p>
+</section>
+<section id="interactive-network" class="level1">
+<h1>4. Interactive Network</h1>
+<ol type="1">
+<li>There is a dropdown list where the user can select an entity to see its network interactivity.</li>
+</ol>
+<p><img src="New folder/Picture9.png" class="img-fluid"></p>
+</section>
+<section id="daily-communication-graph" class="level1">
+<h1>5. Daily Communication Graph</h1>
+<ol type="1">
+<li>User can use the filter (as mentioned above in “1. Filters”) to select the desired dates to see selected entities’ daily communication between other entities.&nbsp;</li>
+</ol>
+<p><img src="New folder/Picture10.png" class="img-fluid"></p>
+</section>
+<section id="timeline-graph" class="level1">
+<h1>6. Timeline Graph</h1>
+<ol type="1">
+<li>&nbsp;use the filter (as mentioned above in “1. Filters”) to select the desired dates to see selected entities’ communication content based on the selected dates.</li>
+</ol>
+<p><img src="New folder/Picture11.png" class="img-fluid"></p>
+
+
 </section>
 
 </main> <!-- /main -->

@@ -133,7 +133,7 @@ ui <- fluidPage(
                   # timeline graph
                   tabPanel("Timeline Graph", 
                            selectInput("search_name", "Person: ", choices=c("All", entity_names), selected=NULL), 
-                           uiOutput("timeline"))
+                           uiOutput("timeline", height=0.1))
 
       )
     )
