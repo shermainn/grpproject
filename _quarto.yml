@@ -10,6 +10,8 @@ website:
         text: "Proposal"
       - href: "Meeting_Minutes.html"
         text: "Meeting Minutes"
+      - href: "User_Guide.html"
+        text: "User Guide"
     right: 
       - href: index.qmd
         text: Home

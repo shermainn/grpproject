@@ -1,0 +1,61 @@
+---
+title: "User_Guide"
+format: html
+editor: visual
+---
+
+Communication Analysis of Entities Using Shiny Application
+
+# Application User Guide 
+
+# Filters 
+
+Use the filters on the left-hand side of the shiny application to select the number of entities they are interested in. 
+
+1.  User to select from the dropdown menu the number of entities they are interested in.
+
+2.  User to drag the slider to the desired dates from the Event-date window. The dates are between the 14 days period ranging from 2040-10-01 to 2040-10-15.
+
+3.  User to check/uncheck to keep isolated nodes on the plots shown.
+
+4.  Legend is provided based on the colours for the “Frequency of Communication” and “Interactive Network” plots.
+
+There is a total of 5 tabs on the shiny application: 
+
+-   Data Table
+
+-   Heatmap & Frequency of Communication
+
+-   Interactive Network
+
+-   Daily Communication Graph
+
+-   Timeline Graph
+
+1.  User to select the tab that they are interested in.
+
+# Data Table
+
+This tab shows the nodes and edges used in the analysis for the following plots and graphs.
+
+1.  User to select the entries that they are interested in.
+
+2.  Entries will be highlighted in blue when selected.
+
+# Heatmap and Frequency of Communication
+
+1.  User can select a specific individual from the dropdown list to see the frequency of communication or who the specific entity interacts with. The highlighted entities in green show their communication patterns. When the mouse is hovering over the entity, the frequency of the communication (shows as “count”) will be displayed.
+
+2.  Heatmap will show the corresponding communication patterns based on the selected individual. 
+
+# Interactive Network
+
+1.  There is a dropdown list where the user can select an entity to see its network interactivity.
+
+# Daily Communication Graph
+
+1.  User can use the filter (as mentioned above in “1. Filters”) to select the desired dates to see selected entities’ daily communication between other entities. 
+
+# Timeline Graph
+
+1.   use the filter (as mentioned above in “1. Filters”) to select the desired dates to see selected entities’ communication content based on the selected dates.
