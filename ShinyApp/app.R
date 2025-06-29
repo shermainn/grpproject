@@ -60,7 +60,7 @@ entity_names <- graph$nodes %>%
 special_names <- graph$nodes %>%
   filter(type == "Entity", str_detect(name, "^(Mrs\\.|The)")) %>%
   pull(name)
-print(special_names)
+
 
 # ── 3. UI -------------------------------------------------------------
 ui <- fluidPage(
