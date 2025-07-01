@@ -59,6 +59,11 @@ entity_names <- graph$nodes %>%
   filter(type == "Entity") %>%
   pull(name) 
 
+special_names <- graph$nodes %>%
+  filter(type == "Entity", str_detect(name, "^(Mrs\\.|The)")) %>%
+  pull(name)
+
+
 # ── 3. UI -------------------------------------------------------------
 ui <- fluidPage(
   
@@ -129,7 +134,7 @@ ui <- fluidPage(
                   # timeline graph
                   tabPanel("Timeline Graph", 
                            selectInput("search_name", "Person: ", choices=c("All", entity_names), selected=NULL), 
-                           uiOutput("timeline", height=0.1))
+                           uiOutput("timeline"))
 
       )
     )
@@ -244,6 +249,8 @@ server <- function(input, output, session) {
     name_parts <- unlist(str_split(input$search_name, "\\s+"))
     if (length(name_parts) >= 3) {
       # For 3+ words: match full name only
+      search_pattern <- paste0("\\b", input$search_name, "\\b")
+    } else if (input$search_name %in% special_names) {
       search_pattern <- paste0("\\b", input$search_name, "\\b")
     } else {
       # For 1–2 words: match full name OR just first name
