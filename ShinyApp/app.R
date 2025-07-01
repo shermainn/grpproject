@@ -13,6 +13,8 @@ library(ggplot2)
 library(cronologia)
 library(stringr)
 
+SEED<- 42
+
 # ── 1. master colour map ---------------------------------------------
 legend_cols <- c(
   Person        = "#1b9e77",
@@ -106,8 +108,6 @@ ui <- fluidPage(
                       width     = "260px",
                       selectize = TRUE
                     ),
-                    
-                    # ✧✧ focus_id2 block is gone ✧✧
                     
                     visNetworkOutput("pv_net", height = "50vh"),
                     tags$hr(),
@@ -334,6 +334,7 @@ server <- function(input, output, session) {
     if (nrow(net_nodes) == 0) return(visNetwork(data.frame(), data.frame()))
     
     visNetwork(net_nodes, net_edges) %>%
+      visLayout(randomSeed = SEED) %>%
       visOptions(highlightNearest = TRUE, nodesIdSelection = TRUE) %>%
       visPhysics(stabilization = FALSE)
   })
@@ -393,6 +394,8 @@ server <- function(input, output, session) {
     
     ## 5  one facet per day ---------------------------------------------
     plots <- lapply(sort(unique(pv_edges$event_date)), function(d){
+      
+      set.seed(SEED)
       
       g <- tbl_graph(
         nodes = pv_nodes %>% filter(id %in% c(
@@ -520,6 +523,7 @@ server <- function(input, output, session) {
     
     # 2. build the visNetwork widget ------------------------------------
     visNetwork(net_nodes, net_edges) %>%
+      visLayout(randomSeed = SEED) %>%
       visOptions(highlightNearest = TRUE, nodesIdSelection = TRUE) %>%
       visEdges(smooth = FALSE,
                arrows = list(to = list(enabled = TRUE,
