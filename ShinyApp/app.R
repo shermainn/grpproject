@@ -346,10 +346,26 @@ server <- function(input, output, session) {
       visPhysics(stabilization = FALSE)
   })
   
+  
+  hex_to_name <- c(
+    "#1b9e77" = "Teal Green",
+    "#d95f02" = "Orange",
+    "#7570b3" = "Purple",
+    "#e7298a" = "Magenta",
+    "#e6ab02" = "Goldenrod",
+    "#66a61e" = "Leaf Green"
+  )
+  
+  
   # ---- tables --------------------------------------------------------
-  output$nodes_table <- renderDT(
-    nodes_r()  %>% select(id, label, category, color),
-    options = list(pageLength = 10), rownames = FALSE)
+  output$nodes_table_dt <- renderDT(
+    nodes_r() %>%
+      select(id, label, category, color) %>%
+      mutate(color = hex_to_name[color]),   # <<< translate here
+    options  = list(pageLength = 10),
+    rownames = FALSE
+  )
+  
   output$edges_table <- renderDT(
     edges_r() %>% select(from, to, type, event_date),
     options = list(pageLength = 10), rownames = FALSE)
